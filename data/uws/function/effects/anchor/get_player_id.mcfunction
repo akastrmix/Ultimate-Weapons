@@ -1,0 +1,2 @@
+scoreboard players reset @s uws.anchor_id
+$execute if data storage uws:profile players[{UUID:$(UUID)}].effects.anchor.id store result score @s uws.anchor_id run data get storage uws:profile players[{UUID:$(UUID)}].effects.anchor.id

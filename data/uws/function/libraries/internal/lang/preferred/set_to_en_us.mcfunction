@@ -1,0 +1,1 @@
+$data modify storage uws:profile players[{UUID:$(UUID)}].preferred_language set value en_us

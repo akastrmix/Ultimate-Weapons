@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_chest",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{uws_item:{type:voidbox},uws_effects:{anchor:{}}}",
+                "minecraft:item_name": "{\"text\":\"Voidbox\",\"color\":\"gold\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "uws:item/voidbox/update_lang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

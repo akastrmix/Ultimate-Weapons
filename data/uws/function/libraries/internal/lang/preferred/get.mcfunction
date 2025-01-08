@@ -1,0 +1,1 @@
+$data modify storage uws:temp player set from storage uws:profile players[{UUID:$(UUID)}]

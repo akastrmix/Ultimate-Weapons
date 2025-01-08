@@ -1,0 +1,1 @@
+execute store result score @s uws.eternity_time run scoreboard players add #temp_gametime uws.state 40

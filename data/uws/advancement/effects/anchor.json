@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "#uws:can_break_anchor"
+            }
+          }
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"uws.anchor\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "uws:effects/anchor/break_block/start"
+  }
+}

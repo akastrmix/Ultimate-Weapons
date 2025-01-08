@@ -1,0 +1,2 @@
+execute unless items entity @s armor.head * run item replace entity @s armor.head with minecraft:stone_button
+item modify entity @s armor.head {"function":"minecraft:set_enchantments","enchantments":{"uws:lightning_immunity":1}}

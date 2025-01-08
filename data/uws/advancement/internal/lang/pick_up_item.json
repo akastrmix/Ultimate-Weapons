@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:thrown_item_picked_up_by_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "uws:is_lang_mismatch/mainhand"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "uws:libraries/internal/lang/update_item/pickup"
+  }
+}

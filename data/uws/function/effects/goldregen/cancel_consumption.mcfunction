@@ -1,0 +1,2 @@
+execute if items entity @s weapon.mainhand *[custom_data~{uws_effects:{goldregen:{}}},consumable] run function uws:libraries/item/preserve_item/mainhand
+execute unless items entity @s weapon.mainhand *[custom_data~{uws_effects:{goldregen:{}}},consumable] run function uws:libraries/item/preserve_item/offhand

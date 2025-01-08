@@ -1,0 +1,1 @@
+damage @s 4 uws:true_damage

@@ -1,0 +1,1 @@
+$item modify entity @s armor.head uws:item/$(type)/update_lang

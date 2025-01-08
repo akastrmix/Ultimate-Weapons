@@ -1,0 +1,57 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "uws:update_lang_data"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.excalibur.line1\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.excalibur.line2\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 3,
+    "size": 2,
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_en_us"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "storage": "uws:lang",
+        "nbt": "zh_cn.\"item_lore.excalibur\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 3,
+    "size": 2,
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_zh_cn"
+      }
+    ]
+  }
+]

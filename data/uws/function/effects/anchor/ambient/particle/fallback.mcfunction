@@ -1,0 +1,1 @@
+execute at @s run particle minecraft:large_smoke ~ ~0.45 ~ 1 1 1 0 5 force

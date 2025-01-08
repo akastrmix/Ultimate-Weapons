@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{uws_item:{type:world_breaker},uws_effects:{shatter:{}}}",
+                "minecraft:enchantments": {
+                  "levels": {
+                    "uws:shatter": 1
+                  }
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "minecraft:base_attack_damage",
+                      "amount": 4,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "minecraft:base_attack_speed",
+                      "amount": 16,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ]
+                },
+                "minecraft:item_name": "{\"text\":\"World Breaker\",\"color\":\"green\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "uws:item/world_breaker/update_lang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

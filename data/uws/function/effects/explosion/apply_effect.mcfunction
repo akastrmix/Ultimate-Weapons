@@ -1,0 +1,2 @@
+execute store result score #temp uws.state run function uws:effects/explosion/effect/custom with storage uws:temp item_data
+execute if score #temp uws.state matches 0 run function uws:effects/explosion/effect/fallback

@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{uws_item:{lang:en_us}}",
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_en_us"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{uws_item:{lang:zh_cn}}",
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_zh_cn"
+      }
+    ]
+  }
+]

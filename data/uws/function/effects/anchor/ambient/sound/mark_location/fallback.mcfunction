@@ -1,0 +1,1 @@
+execute at @s run playsound minecraft:entity.ender_dragon.hurt block @s ~ ~ ~ 1 0.5

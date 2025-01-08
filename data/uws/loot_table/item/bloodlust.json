@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{uws_item:{type:bloodlust,use_custom_lore:0b},uws_effects:{edging:{}}}",
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:sharpness": 5,
+                    "uws:edging": 1
+                  }
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "minecraft:base_attack_damage",
+                      "amount": 6,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "minecraft:base_attack_speed",
+                      "amount": 16,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ]
+                },
+                "minecraft:item_name": "{\"text\":\"Bloodlust\",\"color\":\"red\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "uws:item/bloodlust/update_lang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

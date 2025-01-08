@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "chest": {
+                  "predicates": {
+                    "minecraft:custom_data": "{uws_effects:{resilience:{}}}"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "uws:is_lang_mismatch/chest"
+          }
+        ],
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{uws_effects:{resilience:{}}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "uws:effects/resilience/update_item_lang"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{uws_item:{type:artemis_bow},uws_effects:{homing:{}}}",
+                "minecraft:enchantments": {
+                  "levels": {
+                    "uws:homing": 1
+                  }
+                },
+                "minecraft:item_name": "{\"text\":\"Artemis' Bow\",\"color\":\"red\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"Hunting\",\"color\":\"blue\",\"italic\":false}",
+                  "{\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "uws:item/artemis_bow/update_lang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

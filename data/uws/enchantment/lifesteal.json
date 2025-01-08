@@ -1,0 +1,60 @@
+{
+  "description": "Lifesteal",
+  "supported_items": "#uws:lifesteal_enchantable",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "uws:effects/lifesteal/get_item_data"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "uws.state": 1
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "uws:effects/lifesteal/apply_damage"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "uws.state": 1
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "uws:effects/lifesteal/apply_healing"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  }
+}

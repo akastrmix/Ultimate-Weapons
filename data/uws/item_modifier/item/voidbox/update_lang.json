@@ -1,0 +1,78 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "uws:update_lang_data"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.voidbox.line1\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.voidbox.line2\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.voidbox.line3\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.voidbox.line4\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 4,
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_en_us"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "storage": "uws:lang",
+        "nbt": "zh_cn.\"item_lore.voidbox.line1\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "zh_cn.\"item_lore.voidbox.line2\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 4,
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_zh_cn"
+      }
+    ]
+  }
+]

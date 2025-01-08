@@ -1,0 +1,6 @@
+$execute store result score #temp_current_tier_level uws.state run data get storage uws:temp item_data.tier$(current_tier)_level
+$execute store result storage uws:temp item_data.sharpness_bonus int 1 run scoreboard players remove #temp_current_tier_level uws.state $(tier0_level)
+$execute store result storage uws:temp item_data.next_tier_requirement int 1 run data get storage uws:temp item_data.tier$(next_tier)_requirement
+
+item modify entity @s weapon.mainhand [{"function":"minecraft:set_custom_data","tag":"{uws_item:{use_custom_lore:1b}}","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"predicates":{"minecraft:custom_data":"{uws_item:{type:bloodlust}}"}}}}}]},{"function":"minecraft:copy_custom_data","source":{"type":"minecraft:storage","source":"uws:temp"},"ops":[{"source":"item_data.sharpness_bonus","target":"uws_effects.edging.sharpness_bonus","op":"replace"},{"source":"item_data.kill_count","target":"uws_effects.edging.kill_count","op":"replace"},{"source":"item_data.next_tier_requirement","target":"uws_effects.edging.next_tier_requirement","op":"replace"},{"source":"item_data.current_tier","target":"uws_effects.edging.current_tier","op":"replace"}]}]
+item modify entity @s weapon.mainhand uws:item/bloodlust/update_custom_lore

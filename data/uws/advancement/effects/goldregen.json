@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "#uws:goldregen_applicable",
+          "predicates": {
+            "minecraft:custom_data": "{uws_effects:{goldregen:{}}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "uws:effects/goldregen/apply_effect"
+  }
+}

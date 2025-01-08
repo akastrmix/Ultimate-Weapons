@@ -1,0 +1,45 @@
+{
+  "description": "Lightning Strike",
+  "supported_items": "#uws:lightning_strike_enchantable",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "uws:effects/lightning_strike/apply_cooldown"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "uws.state": 1
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "uws:effects/lightning_strike/apply_effect"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{uws_item:{type:axe_of_perun},uws_effects:{lightning_strike:{}}}",
+                "minecraft:enchantments": {
+                  "levels": {
+                    "uws:lightning_strike": 1
+                  }
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "minecraft:base_attack_damage",
+                      "amount": 5,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "minecraft:base_attack_speed",
+                      "amount": 16,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ]
+                },
+                "minecraft:item_name": "{\"text\":\"Axe of Perun\",\"color\":\"gold\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"Thunder\",\"color\":\"blue\",\"italic\":false}",
+                  "{\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "uws:item/axe_of_perun/update_lang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

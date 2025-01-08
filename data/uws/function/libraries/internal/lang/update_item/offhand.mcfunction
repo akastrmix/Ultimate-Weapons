@@ -1,0 +1,1 @@
+$item modify entity @s weapon.offhand uws:item/$(type)/update_lang

@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{uws_item:{type:barbarian_chestplate},uws_effects:{resilience:{}}}",
+                "minecraft:enchantments": {
+                  "levels": {
+                    "uws:resilience": 1
+                  }
+                },
+                "minecraft:item_name": "{\"text\":\"Barbarian Chestplate\",\"color\":\"green\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"Rage\",\"color\":\"blue\",\"italic\":false}",
+                  "{\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "uws:item/barbarian_chestplate/update_lang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

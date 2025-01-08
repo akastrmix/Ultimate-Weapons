@@ -1,0 +1,1 @@
+$execute as @e[type=minecraft:interaction,tag=uws.anchor,nbt={attack:{player:$(player),timestamp:$(gametime)L}},distance=..$(distance)] at @s positioned ~ ~0.5 ~ if function uws:effects/anchor/break_block/get_id run function uws:effects/anchor/break_block/check_block with storage uws:temp entity_data

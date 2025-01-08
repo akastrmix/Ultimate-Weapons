@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "uws.schedule_id": {
+      "min": {
+        "type": "minecraft:storage",
+        "storage": "uws:temp",
+        "path": "schedule.slice[-1].entity_id"
+      },
+      "max": {
+        "type": "minecraft:storage",
+        "storage": "uws:temp",
+        "path": "schedule.slice[-1].entity_id"
+      }
+    }
+  }
+}

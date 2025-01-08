@@ -1,0 +1,42 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uws.lang": 1
+      }
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "uws.lang": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#uws_general"
+            },
+            "score": "uws.lang"
+          },
+          "range": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+execute unless predicate {"condition":"minecraft:random_chance","chance":1} run tag @s add uws.ineffective

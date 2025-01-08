@@ -1,0 +1,1 @@
+$data remove storage uws:profile players[{UUID:$(UUID)}].preferred_language
