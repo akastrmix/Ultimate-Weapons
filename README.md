@@ -1,11 +1,76 @@
 # Ultimate Weapons
-This datapack introduces powerful and highly customizable items that draws inspiration from major Minecraft servers, especially Hypixel, and aims to not use any tick functions to minimize impact on performance.
+This datapack introduces powerful and highly customizable items for Minecraft 1.21.4+ that draws inspiration from major Minecraft servers, especially Hypixel, and aims to minimize performance impact by avoiding the use of tick functions.
+<br><br>
+## Get started
+### Get item
+To obtain an UWS item, simply run this command:
+```mcfunction
+/function uws:get_item/<item_name>
+```
+Currently, there are 10 available items, all of which are only obtainable through commands, with more to be added in the future. A wiki is planned for the future to provide detailed information on each item's functionality.
+<br><br>
+### Customize item / effect
+UWS items are driven by UWS effects that are customizable and independent, meaning the effects are not bound to a specific item, and you can stack as many effects onto an item as you like. These effects are usually triggered through enchantments, advancements, or `consumable` components. Each UWS item is associated with a unique UWS effect.
+<br><br>
+To customize an UWS item / effect, first use this command:
+```mcfunction
+/function uws:get_item_config/<item_name>
+```
+You will then be given two command blocks with name `<item_name> Template` and `<item_name> Modifier`. The `<item_name> Template` block gives you an UWS item with customizable effects, while the `<item_name> Modifier` lets you modify the effects of your held item.
+<br><br>
+- **In Template block**: Inside this block, look for the following data:
+```
+"minecraft:custom_data":"{uws_effects:{<effect_name>:{key1:value,key2:value,...}}}"
+```
+The `<effect_name>` refers to the effect that will apply to this item. You can customize it by modifying the given `value` associated with this effect. Once you're done, activate the command block to receive the customized version of the target UWS item.
+<br><br>
+- **In Modifier block**: Inside this block, look for the this data:
+```
+"minecraft:set_custom_data","tag":"{uws_effects:{<effect_name>:{key1:value,key2:value,...}}}"
+```
+This is similar to above. Modify the `value` within the effect in this block, then activate it to apply the changes to your held item. This also ensures the item gains the necessary trigger to activate the effect.
+<br><br>
+> [!NOTE]
+> Customization will only work if all arguments are complete and correctly formatted. Missing or incorrectly formatted arguments could result in all values within this effect reverting to their default ones when the effect is triggered.
 
-## Get item
-To get an UWS item, simply type `/function uws:get_item/<item_type>`, the lore of the item tells you its feature and how you can use it. For customization, type `/function uws:get_item_config/<item_type>`, and you will be given 2 command blocks named `(item_name) Template` and `(item_name) Modifier`, each for generating item with custom arguments and modifying your held item's arguments, the `{uws_effect:{(effect_name):{}}}`compound will include all values that you can customize. Please note that the customization will only work when all arguments are complete and correctly formatted, missing one could lead to the use of default values.
+<br>
 
-## Set effect
-Effects are what enable UWS items to function, you can also make other items get the same effect as an UWS item. If you want to figure out which effect an UWS item uses, just type `/data get entity @s SelectedItem.components.minecraft:custom_data.uws_effects`. And you can use `/function uws:set_effect/<effect_name>` to apply this effect to your held item.
+### Apply effect to other item
+You can also apply the same effect from a UWS item to other items. Use the below command it apply it to your held item:
+```mcfunction
+/function uws:set_effect/<effect_name>
+```
+If you're not sure which effect is associated with which item, use this command to get the effect info of your held item:
+```mcfunction
+/data get entity @s SelectedItem.components.minecraft:custom_data.uws_effects
+```
+<br>
 
-## Switch language
-This datapack supports 2 languages (English, Chinese) covering text messages and item lores. Use `/function uws:language/default/<lang>` to set the default language (English by default) and `/function uws:language/prefer/<lang>` to set your preferred language.
+### Manage effects
+Ban an UWS effect:
+```mcfunction
+/function uws:ban_effect/<effect_name>
+```
+Unban an UWS effect or clear banlist:
+```mcfunction
+/function uws:unban_effect/<effect_name>
+/function uws:unban_effect/all
+```
+<br>
+
+## Supported languages
+This datapack supports the following languages (for both text messages and UWS item lores):
+- English (default)
+- Simplified Chinese
+
+To switch between them, use the following commands:
+
+Set default language:
+```mcfunction
+/function uws:language/default/<lang>
+```
+Set your preferred language:
+```mcfunction
+/function uws:language/prefer/<lang>
+```
+**The language for item lores may not update immediately after switching.*
