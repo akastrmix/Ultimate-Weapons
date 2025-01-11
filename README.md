@@ -1,3 +1,4 @@
+- [简体中文](https://github.com/akastrmix/Ultimate-Weapons/blob/main/README_ZH.md)
 # Ultimate Weapons
 Ultimate Weapons introduces powerful and highly customizable items for Minecraft 1.21.4+ that draws inspiration from major Minecraft servers, especially Hypixel, and aims to minimize performance impact by avoiding the use of tick functions.
 <br><br>
@@ -10,7 +11,7 @@ To obtain an UWS item, simply run this command:
 Currently, there are 10 available items, all of which are only obtainable through commands, and with more to be added in future updates. A wiki is also planned for the future to provide detailed information on each item's functionality.
 <br><br>
 ### Customize item / effect
-UWS items are driven by UWS effects that are customizable and independent, meaning the effects are not bound to a specific item and you have full control over where and how effects are applied, making things possible like stacking as many effects as you like onto an item. These effects are usually triggered through enchantments, advancements, or `consumable` components. Each UWS item is associated with a unique UWS effect.
+UWS items are driven by UWS effects that are customizable and independent, meaning the effects are not bound to a specific item and you have full control over where and how they are applied, making things possible like stacking as many effects as you like onto an item. These effects are usually triggered through enchantments, advancements, or `consumable` components. Each UWS item is associated with a unique UWS effect.
 <br><br>
 To customize an UWS item / effect, first use this command:
 ```mcfunction
@@ -18,13 +19,13 @@ To customize an UWS item / effect, first use this command:
 ```
 This will give you two command blocks with name `<item_name> Template` and `<item_name> Modifier`. The `<item_name> Template` block is responsible for giving you an UWS item with customizable effects, while the `<item_name> Modifier` lets you modify the effects of your held item.
 <br><br>
-- **In Template block**: Inside this block, look for this data:
+- **In Template block:** Inside this block, look for this data:
 ```
 "minecraft:custom_data":"{uws_effects:{<effect_name>:{key1:value,key2:value,...}}}"
 ```
 The `<effect_name>` refers to the effect that will apply to this item; in this case, it is the effect that the UWS item is associated with. You can customize it by editing the `value` of a given key in this tag. Once you're done, activate the command block to receive the customized version of the target UWS item.
 <br><br>
-- **In Modifier block**: Inside this block, look for the this data:
+- **In Modifier block:** Inside this block, look for the this data:
 ```
 "minecraft:set_custom_data","tag":"{uws_effects:{<effect_name>:{key1:value,key2:value,...}}}"
 ```
