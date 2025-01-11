@@ -1,80 +1,80 @@
 # Ultimate Weapons
-Ultimate Weapons introduces powerful and highly customizable items for Minecraft 1.21.4+ that draws inspiration from major Minecraft servers, especially Hypixel, and aims to minimize performance impact by avoiding the use of tick functions.
+Ultimate Weapons为Minecraft 1.21.4+带来了强大且可高度自定义的物品，灵感来源于主流Minecraft服务器，例如Hypixel，并通过避免使用tick函数来尽量优化性能。
 <br><br>
-## Get started
-### Get item
-To obtain an UWS item, simply run this command:
+## 使用此数据包
+### 获得物品
+运行此命令来获得一个UWS物品：
 ```mcfunction
 /function uws:get_item/<item_name>
 ```
-Currently, there are 10 available items, all of which are only obtainable through commands, and with more to be added in future updates. A wiki is also planned for the future to provide detailed information on each item's functionality.
+目前，已有10种物品，并且只能通过命令获得，同时未来将会有更多物品加入，并计划创建一个wiki来提供每个物品功能的详细信息。
 <br><br>
-### Customize item / effect
-UWS items are driven by UWS effects that are customizable and independent, meaning the effects are not bound to a specific item and you have full control over where and how effects are applied, making things possible like stacking as many effects as you like onto an item. These effects are usually triggered through enchantments, advancements, or `consumable` components. Each UWS item is associated with a unique UWS effect.
+### 自定义物品/效果
+UWS物品由可自定义的UWS效果所驱动，这些效果是独立的，即效果并不绑定在特定物品上，而是完全可控的，可以做到像堆叠多个效果到一个物品上这样的操作。这些效果通常通过附魔、进度或`consumable`组件来触发，每个UWS物品都与一个特定的UWS效果相关联。
 <br><br>
-To customize an UWS item / effect, first use this command:
+若要自定义某个UWS物品/效果，首先使用以下命令：
 ```mcfunction
 /function uws:get_item_config/<item_name>
 ```
-This will give you two command blocks with name `<item_name> Template` and `<item_name> Modifier`. The `<item_name> Template` block is responsible for giving you an UWS item with customizable effects, while the `<item_name> Modifier` lets you modify the effects of your held item.
+此命令将给予你两个命令方块，名字分别为`<item_name> Template`和`<item_name> Modifier`。`<item_name> Template`命令方块负责生成带有可自定义效果的UWS物品，而`<item_name> Modifier`可以让你修改当前手持物品的效果。
 <br><br>
-- **In Template block**: Inside this block, look for this data:
+- **Template命令方块：** 在此命令方块中，查找以下数据：
 ```
 "minecraft:custom_data":"{uws_effects:{<effect_name>:{key1:value,key2:value,...}}}"
 ```
-The `<effect_name>` refers to the effect that will apply to this item; in this case, it is the effect that the UWS item is associated with. You can customize it by editing the `value` of a given key in this tag. Once you're done, activate the command block to receive the customized version of the target UWS item.
+`<effect_name>`是将应用于此物品的效果，在上述情况下，是该UWS物品所关联的效果。你可以通过编辑此标签中给定key的`value`来进行自定义，完成后，激活此命令方块即可获得自定义版本的目标UWS物品。
 <br><br>
-- **In Modifier block**: Inside this block, look for the this data:
+- **Modifier命令方块：** 在此命令方块中，查找以下数据：
 ```
 "minecraft:set_custom_data","tag":"{uws_effects:{<effect_name>:{key1:value,key2:value,...}}}"
 ```
-This is similar to above. Modify the `value` of a key in the tag, then activate it to apply the changes to your held item's effect. This also ensures the item gains the necessary trigger to activate the effect.
+与上面类似，修改标签中某个key的`value`，然后激活它来修改你手持物品的效果，此操作同时确保物品拥有必要的触发器以保证效果的成功激活。
 <br><br>
 > [!NOTE]
-> Customization will only work if all arguments of the effect are complete and correctly formatted. Missing or incorrectly formatted arguments could result in all values falling back to their default ones when triggering the effect.
+> 自定义仅在效果的所有参数完整且格式正确时有效，若参数缺失或格式不正确，效果触发时所有值将以默认数值执行。
 
 <br>
 
-### Apply effect to other item
-To apply an UWS effect to your held item, use the command below:
+### 应用效果到其他物品
+使用以下命令将UWS效果应用到你的手持物品：
 ```mcfunction
 /function uws:set_effect/<effect_name>
 ```
-If you're not sure which effect is associated with which item, use this command to get the effect info of your held item:
+如果你不确定哪个效果与哪个物品相关联，可以使用此命令来获取当前手持物品的效果信息：
 ```mcfunction
 /data get entity @s SelectedItem.components.minecraft:custom_data.uws_effects
 ```
 <br>
 
-### Manage effects
-Ban an UWS effect:
+### 管理效果
+禁止某个UWS效果：
 ```mcfunction
 /function uws:ban_effect/<effect_name>
 ```
-This will prevent the effect from being triggered. For blocks or items that are consumable, this also cancels their placement or consumption.
+此操作将阻止效果触发，对于方块或者可消耗物品，还会取消其放置或消耗。
 
-Unban an UWS effect or clear banlist:
+解禁某个UWS效果或直接清除封禁列表：
 ```mcfunction
 /function uws:unban_effect/<effect_name>
 /function uws:unban_effect/all
 ```
 <br>
 
-## Supported languages
-This datapack supports the following languages (covering text messages and UWS item lores):
-- English (default)
-- Simplified Chinese
+## 支持的语言
+此数据包支持以下语言（包括文本消息和UWS物品描述）：
+- English (默认)
+- 简体中文
 
-To switch between them, use the following commands:
+可使用以下命令切换语言：
 
-**Set default language:**
+**设置默认语言：**
 ```mcfunction
 /function uws:language/default/<lang>
 ```
-**Set your preferred language:**
+**设置你的偏好语言：**
 ```mcfunction
 /function uws:language/prefer/<lang>
 ```
 <br>
 
-**The language for item lores may not update immediately after switching.*
+**物品描述的语言在切换后可能不会及时更新。*
