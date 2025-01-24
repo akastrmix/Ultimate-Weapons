@@ -8,7 +8,7 @@ To obtain an UWS item, simply run this command:
 ```mcfunction
 /function uws:get_item/<item_name>
 ```
-Currently, there are 10 available items, with more unique ones coming in future updates. All items are only obtainable through commands, as we prefer leaving their acquisition and use primarily to server operators. This approach ensures flexibility, giving administrators the freedom to determine how items fit into their gameplay while avoiding direct impacts on mechanics through predefined recipes.
+Currently, there are 10 available items, with more unique ones coming in future updates. All items are only obtainable through commands, as we prefer leaving their acquisition and control to server operators, ensuring flexibility and allowing administrators to adapt items to gameplay without directly impacting mechanics through predefined recipes.
 
 To view the list of UWS items, visit [this page](https://github.com/akastrmix/Ultimate-Weapons/wiki/Items).
 <br><br>
