@@ -9,7 +9,7 @@ execute if data storage uws:settings banned_effects[{name:goldregen}] run return
 
 execute store result score #temp_gametime uws.state run time query gametime
 execute if score #temp_gametime uws.state < @s uws.goldregen_time if entity @s[gamemode=!creative,gamemode=!spectator] run function uws:effects/goldregen/cancel_consumption
-execute if score #temp_gametime uws.state < @s uws.goldregen_time run return run execute unless entity @s[tag=ignore_ghead_hints] run function uws:libraries/internal/text/please_wait
+execute if score #temp_gametime uws.state < @s uws.goldregen_time run return run execute unless entity @s[tag=uws.ignore_cooldown_hints] run function uws:libraries/effect/display_cooldown {effect:goldregen,equipment:weapon}
 
 data remove storage uws:temp item_data
 execute if items entity @s weapon.mainhand *[custom_data~{uws_effects:{goldregen:{}}},consumable] run data modify storage uws:temp item_data set from entity @s SelectedItem.components.minecraft:custom_data.uws_effects.goldregen
@@ -21,4 +21,4 @@ execute if data storage uws:temp item_data.effects[0] run function uws:effects/g
 execute store result score #temp uws.state run function uws:effects/goldregen/cooldown/custom with storage uws:temp item_data
 execute if score #temp uws.state matches 0 run function uws:effects/goldregen/cooldown/fallback
 
-execute unless entity @s[tag=ignore_ghead_hints] run function uws:libraries/internal/text/ate_golden_head
+execute unless entity @s[tag=uws.ignore_ghead_hints] run function uws:libraries/internal/text/ate_golden_head

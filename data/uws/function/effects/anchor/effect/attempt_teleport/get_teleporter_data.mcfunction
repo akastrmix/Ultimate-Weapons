@@ -4,7 +4,7 @@ data remove storage uws:temp block_data
 data modify storage uws:temp block_data.teleporter_x set from block ~ ~ ~ x
 data modify storage uws:temp block_data.teleporter_y set from block ~ ~ ~ y
 data modify storage uws:temp block_data.teleporter_z set from block ~ ~ ~ z
-data modify storage uws:temp block_data.teleporter_dimension set from entity @s Dimension
+data modify storage uws:temp block_data.teleporter_dimension set from storage uws:temp entity_data.Dimension
 
 $data modify storage uws:profile players[{UUID:$(UUID)}].effects.anchor merge from storage uws:temp block_data
 $data modify storage uws:profile players[{UUID:$(UUID)}].effects.anchor.awaits_loading set value {}

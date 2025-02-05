@@ -1,0 +1,3 @@
+execute if predicate uws:is_target_ore_mined run function uws:effects/smelting/smelt_ore
+execute store result score @s uws.smelting_loop_time run time query gametime
+execute unless score #uws_general uws.smelting_time matches 1 if items entity @s weapon.mainhand *[enchantments~[{enchantments:"uws:smelting"}]] run function uws:libraries/schedule/handle_input {with:{command:"function uws:effects/smelting/loop",time:1}}

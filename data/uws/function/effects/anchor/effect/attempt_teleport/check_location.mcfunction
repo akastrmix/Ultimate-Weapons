@@ -8,11 +8,11 @@ $execute in $(teleporter_dimension) run forceload remove $(teleporter_x) $(telep
 $data remove storage uws:profile players[{UUID:$(UUID)}].effects.anchor.has_placed
 $data remove storage uws:profile players[{UUID:$(UUID)}].effects.anchor.awaits_loading
 
-$execute in $(dimension) positioned $(x) $(y) $(z) unless block ~ ~ ~ #uws:anchor_applicable{components:{"minecraft:custom_data":{uws_effects:{anchor:{owner_id:$(id)}}}}} run return run execute unless entity @s[tag=ignore_voidbox_hints] run function uws:libraries/internal/text/no_second_voidbox_to_link
-$execute in $(dimension) positioned $(x) $(y) $(z) unless entity @e[type=minecraft:interaction,tag=uws.anchor,scores={uws.anchor_id=$(id)},distance=..1] run return run execute unless entity @s[tag=ignore_voidbox_hints] run function uws:libraries/internal/text/no_second_voidbox_to_link
+$execute in $(dimension) positioned $(x) $(y) $(z) unless block ~ ~ ~ #uws:anchor_applicable{components:{"minecraft:custom_data":{uws_effects:{anchor:{owner_id:$(id)}}}}} run return run execute as @a[scores={uws.anchor_id=$(id)},tag=!uws.ignore_voidbox_hints,limit=1] run function uws:libraries/internal/text/no_second_voidbox_to_link
+$execute in $(dimension) positioned $(x) $(y) $(z) unless entity @e[type=minecraft:interaction,tag=uws.anchor,scores={uws.anchor_id=$(id)},limit=1,distance=..1] run return run execute as @a[scores={uws.anchor_id=$(id)},tag=!uws.ignore_voidbox_hints,limit=1] run function uws:libraries/internal/text/no_second_voidbox_to_link
 
 data remove storage uws:temp block_data
-$data modify storage uws:temp block_data set from block $(x) $(y) $(z) components.minecraft:custom_data.uws_effects.anchor
+$execute in $(dimension) run data modify storage uws:temp block_data set from block $(x) $(y) $(z) components.minecraft:custom_data.uws_effects.anchor
 
 $execute in $(dimension) positioned $(x) $(y) $(z) rotated $(x_rotation) $(y_rotation) as @a[scores={uws.anchor_id=$(id)},limit=1] run function uws:effects/anchor/effect/attempt_teleport/teleport
-$setblock $(teleporter_x) $(teleporter_y) $(teleporter_z) minecraft:air
+$execute in $(teleporter_dimension) run setblock $(teleporter_x) $(teleporter_y) $(teleporter_z) minecraft:air

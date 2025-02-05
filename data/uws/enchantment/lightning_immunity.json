@@ -1,6 +1,6 @@
 {
   "description": "Lightning Immunity",
-  "supported_items": "air",
+  "supported_items": "minecraft:air",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -30,6 +30,14 @@
           }
         },
         "effect": {}
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "uws:effects/lightning_strike/update_lightning_immunity"
+        }
       }
     ]
   }

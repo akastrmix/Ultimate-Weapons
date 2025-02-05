@@ -1,3 +1,5 @@
+execute if score @s uws.hint_time matches 0 run return fail
+scoreboard players remove @s uws.hint_time 1
 execute if data entity @s {inGround:1b} run return fail
 
 execute unless entity @s[tag=uws.ineffective] run function uws:effects/homing/loop/find_target

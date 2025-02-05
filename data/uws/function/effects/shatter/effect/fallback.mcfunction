@@ -3,4 +3,4 @@ scoreboard players set #temp_item_damage uws.state -100
 
 setblock ~ ~ ~ air destroy
 particle minecraft:gust_emitter_small
-playsound minecraft:entity.generic.explode master @a
+playsound minecraft:entity.generic.explode block @a

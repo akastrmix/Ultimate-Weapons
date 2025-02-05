@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:ancient_debris",
+              "functions": [
+                {
+                  "function": "minecraft:set_custom_data",
+                  "tag": "{uws_item:{type:smelting_temp_ancient_debris}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#uws_general"
+                          },
+                          "score": "uws.smelting_time"
+                        },
+                        "range": 1
+                      }
+                    },
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "uws:smelting"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:ancient_debris"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/ancient_debris"
+}

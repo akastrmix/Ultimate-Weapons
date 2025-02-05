@@ -7,6 +7,9 @@ execute if data storage uws:settings banned_effects[{name:anchor}] run return ru
 
 execute store result score #temp_gametime uws.state run time query gametime
 execute if score #temp_gametime uws.state < @s uws.anchor_time run function uws:effects/anchor/cancel_placement
-execute if score #temp_gametime uws.state < @s uws.anchor_time run return run execute unless entity @s[tag=ignore_voidbox_hints] run function uws:libraries/internal/text/please_wait
+execute if score #temp_gametime uws.state < @s uws.anchor_time run return run execute unless entity @s[tag=uws.ignore_cooldown_hints] run function uws:libraries/effect/display_cooldown {effect:anchor,equipment:weapon}
 
-function uws:effects/anchor/check_player_data with entity @s
+data remove storage uws:temp entity_data
+data modify storage uws:temp entity_data set from entity @s
+
+function uws:effects/anchor/check_player_data with storage uws:temp entity_data

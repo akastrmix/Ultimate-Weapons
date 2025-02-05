@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{uws_item:{type:shadow_blade},uws_effects:{phantom:{}}}",
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:item_name": "{\"text\":\"Shadow Blade\",\"color\":\"gold\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "uws:item/shadow_blade/update_lang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uws.smelting.mined_iron": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uws.smelting.mined_deepslate_iron": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uws.smelting.mined_gold": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uws.smelting.mined_deepslate_gold": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uws.smelting.mined_copper": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uws.smelting.mined_deepslate_copper": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uws.smelting.mined_ancient_debris": {
+          "min": 1
+        }
+      }
+    }
+  ]
+}

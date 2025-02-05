@@ -3,7 +3,7 @@ execute if score #temp uws.state matches 0 run function uws:effects/anchor/ambie
 
 tp @s ~ ~ ~ ~ ~
 
-execute unless entity @s[tag=ignore_voidbox_hints] run function uws:libraries/internal/text/teleported_to_original_voidbox
+execute unless entity @s[tag=uws.ignore_voidbox_hints] run function uws:libraries/internal/text/teleported_to_original_voidbox
 execute store result score #temp uws.state run function uws:effects/anchor/ambient/sound/teleport/custom with storage uws:temp block_data
 execute if score #temp uws.state matches 0 run function uws:effects/anchor/ambient/sound/teleport/fallback
 

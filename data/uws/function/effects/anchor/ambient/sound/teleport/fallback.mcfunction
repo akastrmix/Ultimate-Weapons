@@ -1,1 +1,1 @@
-playsound minecraft:entity.enderman.teleport
+playsound minecraft:entity.enderman.teleport block

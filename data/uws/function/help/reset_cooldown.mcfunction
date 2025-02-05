@@ -9,5 +9,8 @@ scoreboard players reset * uws.shatter_time
 scoreboard players reset * uws.homing_time
 scoreboard players reset * uws.anchor_time
 scoreboard players reset * uws.goldregen_time
+scoreboard players reset * uws.smelting_time
+scoreboard players reset * uws.phantom_time
 
+function uws:libraries/internal/lang/score/validate
 function uws:libraries/internal/text/cooldowns_reset

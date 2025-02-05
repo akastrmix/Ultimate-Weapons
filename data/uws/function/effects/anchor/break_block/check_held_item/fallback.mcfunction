@@ -1,0 +1,1 @@
+execute on attacker if items entity @s weapon.mainhand #uws:can_break_anchor run return 2

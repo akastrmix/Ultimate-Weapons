@@ -39,12 +39,37 @@ data modify storage uws:lang en_us."item_lore.voidbox.line4" set value {"text":"
 data modify storage uws:lang en_us."item_lore.golden_head.line1" set value {"text":"Consume to gain Regeneration III"}
 data modify storage uws:lang en_us."item_lore.golden_head.line2" set value {"text":"(0:05) and Absorption I (2:00)"}
 
+data modify storage uws:lang en_us."item_lore.smelter_pickaxe" set value {"text":"Smelts ores automatically"}
+
+data modify storage uws:lang en_us."item_lore.shadow_blade.line1" set value {"text":"Right click to gain Invisibility III"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line2" set value {"text":"and Speed III for 10 seconds"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line3" set value {"text":"(30 second cooldown)"}
+
 # text
-data modify storage uws:lang en_us."text.uws_help" set value {"text":"UWS Help"}
-data modify storage uws:lang en_us."text.uws_help.content1" set value {"text":"Disable hints for using Death's Scythe / Golden Head / Voidbox"}
-data modify storage uws:lang en_us."text.uws_help.content2" set value {"text":"Reset all cooldowns"}
 data modify storage uws:lang en_us."text.datapack_unloaded" set value {"text":"Ultimate Weapons: Datapack has been unloaded"}
-data modify storage uws:lang en_us."text.cooldowns_reset" set value {"text":"The cooldowns for all UWS items have been reset"}
+data modify storage uws:lang en_us."text.uws_help" set value {"text":"UWS Help"}
+data modify storage uws:lang en_us."text.uws_help.content1" set value {"text":"Reset all cooldowns"}
+data modify storage uws:lang en_us."text.cooldowns_reset" set value {"text":"All related cooldowns have been reset"}
+
+data modify storage uws:lang en_us."text.uws_options" set value {"text":"UWS Options"}
+data modify storage uws:lang en_us."text.uws_options.content1" set value {"text":"Set your preferred language to English"}
+data modify storage uws:lang en_us."text.uws_options.content2" set value {"text":"Set your preferred language to Simplified Chinese"}
+data modify storage uws:lang en_us."text.uws_options.content3" set value {"text":"Toggle cooldown hints"}
+data modify storage uws:lang en_us."text.uws_options.content4" set value {"text":"Toggle cooldown display position"}
+data modify storage uws:lang en_us."text.uws_options.content5" set value {"text":"Toggle hints for using Death's Scythe"}
+data modify storage uws:lang en_us."text.uws_options.content6" set value {"text":"Toggle hints for using Voidbox"}
+data modify storage uws:lang en_us."text.uws_options.content7" set value {"text":"Toggle hints for using Golden Head"}
+
+data modify storage uws:lang en_us."text.cooldown_hints_enabled" set value {"text":"Successfully enabled cooldown hints"}
+data modify storage uws:lang en_us."text.cooldown_hints_disabled" set value {"text":"Successfully disabled cooldown hints"}
+data modify storage uws:lang en_us."text.actionbar_hints_selected" set value {"text":"Cooldown hints are now displayed in the actionbar"}
+data modify storage uws:lang en_us."text.chat_hints_selected" set value {"text":"Cooldown hints are now displayed in the chat"}
+data modify storage uws:lang en_us."text.scythe_hints_enabled" set value {"text":"Successfully enabled hints for using Death's Scythe"}
+data modify storage uws:lang en_us."text.scythe_hints_disabled" set value {"text":"Successfully disabled hints for using Death's Scythe"}
+data modify storage uws:lang en_us."text.voidbox_hints_enabled" set value {"text":"Successfully enabled hints for using Voidbox"}
+data modify storage uws:lang en_us."text.voidbox_hints_disabled" set value {"text":"Successfully disabled hints for using Voidbox"}
+data modify storage uws:lang en_us."text.ghead_hints_enabled" set value {"text":"Successfully enabled hints for using Golden Head"}
+data modify storage uws:lang en_us."text.ghead_hints_disabled" set value {"text":"Successfully disabled hints for using Golden Head"}
 
 data modify storage uws:lang en_us."text.default_lang_set_to_english" set value {"text":"Ultimate Weapons: Default language has been set to English"}
 data modify storage uws:lang en_us."text.default_lang_set_to_chinese" set value {"text":"Ultimate Weapons: Default language has been set to Simplified Chinese"}
@@ -65,11 +90,14 @@ data modify storage uws:lang en_us."text.unbanned_all_effects" set value {"text"
 data modify storage uws:lang en_us."text.effect_not_banned" set value {"text":"This effect is not banned"}
 data modify storage uws:lang en_us."text.effect_banned" set value {"text":"Your weapon or armor has banned effect(s)!"}
 
+data modify storage uws:lang en_us."text.weapon_on_cooldown" set value {"text":"Your weapon is on cooldown for "}
+data modify storage uws:lang en_us."text.helmet_on_cooldown" set value {"text":"Your helmet is on cooldown for "}
+data modify storage uws:lang en_us."text.seconds" set value {"text":" seconds"}
+
 data modify storage uws:lang en_us."text.death_scythe.dealt_damage" set value {"text":"Your Death's Scythe dealt "}
 data modify storage uws:lang en_us."text.death_scythe.healed" set value {"text":" damage and healed you for "}
 
 data modify storage uws:lang en_us."text.golden_head.ate" set value {"text":"You ate an Golden Head"}
-data modify storage uws:lang en_us."text.please_wait" set value {"text":"Please wait a bit before doing this!"}
 
 data modify storage uws:lang en_us."text.voidbox.placed_and_linked" set value {"text":"Your Voidbox has been placed and linked to the location: "}
 data modify storage uws:lang en_us."text.voidbox.place_second_or_collect" set value {"text":"Place your second Voidbox to teleport back to this location. Hit this Voidbox with a pickaxe to collect it and reset the placement status"}

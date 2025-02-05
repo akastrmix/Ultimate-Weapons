@@ -1,2 +1,2 @@
 setblock ~ ~ ~ minecraft:air destroy
-$data merge entity @n[type=minecraft:item,nbt={Age:0s},distance=..1] {Item:{id:"$(id)",components:$(components),count:1}}
+$item modify entity @n[type=minecraft:item,nbt={Age:0s},distance=..1] contents [{"function":"minecraft:set_item","item":"$(id)"},{"function":"minecraft:set_components","components":$(components)},{"function":"minecraft:set_count","count":1}]

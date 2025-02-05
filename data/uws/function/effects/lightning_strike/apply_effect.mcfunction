@@ -2,4 +2,4 @@ execute store result score #temp uws.state run function uws:effects/lightning_st
 execute if score #temp uws.state matches 0 run function uws:effects/lightning_strike/effect/fallback
 
 summon minecraft:lightning_bolt
-execute unless function uws:effects/lightning_strike/remove_lightning_immunity as @a[gamemode=!creative,gamemode=!spectator,distance=..10] run function uws:effects/lightning_strike/apply_lightning_immunity
+execute unless data storage uws:temp {item_data:{lightning_immunity:0b}} as @a[gamemode=!creative,gamemode=!spectator,distance=..10] run function uws:effects/lightning_strike/apply_lightning_immunity
