@@ -73,9 +73,9 @@ Whether or not you have permission, you can use this command to change in-game s
 Add `set <number>` at the end of the command to target a specific option.
 <br><br>
 ## Notes
-- Ultimate Weapons requires a persistent entity and a forceloaded chunk to function properly. Avoid killing all entities (use `/kill @e[tag=!uws.persistent]` instead) or removing all forceloaded chunks, as these actions will break things.
-- Ultimate Weapons modifies some vanilla loot tables for specific use cases. So it's recommended to ensure there are no conflicts with other packs.
-- Ultimate Weapons provides a `/function uws:unload` command to remove all traces before uninstalling.
+- Ultimate Weapons requires a persistent entity and a forceloaded chunk to function properly. Please avoid killing all entities (use `/kill @e[tag=!uws.persistent]` instead) or removing all forceloaded chunks.
+- Ultimate Weapons modifies vanilla loot tables to implement some advanced features. So it's advisable to ensure there are no conflicts with other packs.
+- Ultimate Weapons provides a `/function uws:unload` command to remove all traces before uninstalling the datapack, if necessary.
 <br>
 
 ## Supported languages
