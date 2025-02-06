@@ -7,9 +7,9 @@ Ultimate Weapons为Minecraft 1.21.4+带来了众多强大且可高度自定义�
 ```mcfunction
 /function uws:get_item/<item_name>
 ```
-当前已有10个可用物品，同时，更多物品也计划在将来推出。目前所有物品仅能通过命令获得，通过将物品的获取和控制权交给服务器管理人员来确保灵活性，自由决定物品融入游戏玩法方式的同时避免通过预设配方直接影响游戏机制。
+当前已有10个可用物品，同时，更多物品也计划在将来推出。目前所有物品仅能通过命令获得，以让服务器管理人员持有物品的分发和控制权，自由决定物品融入游戏玩法方式的同时避免通过预设配方直接影响游戏机制。
 
-要查看UWS物品列表，请访问[此页面](https://github.com/akastrmix/Ultimate-Weapons/wiki/%E7%89%A9%E5%93%81)。
+要查看UWS物品文档，请访问[此页面](https://github.com/akastrmix/Ultimate-Weapons/wiki/%E7%89%A9%E5%93%81)。
 <br><br>
 ### 自定义物品/效果
 UWS物品由可自定义的UWS效果所驱动，这些效果是独立的，即效果并不绑定在特定物品上而是完全可操控的，可以做到像堆叠多个效果到一个物品上这样的操作。这些效果通常通过附魔、进度或`consumable`组件来触发，每个UWS物品都与一个特定的UWS效果相关联。
@@ -18,13 +18,13 @@ UWS物品由可自定义的UWS效果所驱动，这些效果是独立的，即�
 ```mcfunction
 /function uws:get_item_config/<item_name>
 ```
-此命令将给予你两个命令方块，名字分别为`<item_name> Template`和`<item_name> Modifier`。`<item_name> Template`命令方块负责生成带有可自定义效果的UWS物品，而`<item_name> Modifier`可以让你修改当前手持物品的效果。
+此命令将给予你两个命令方块，名字分别为`<item_name> Template`和`<item_name> Modifier`。`<item_name> Template`命令方块负责生成带有可调整效果的UWS物品，而`<item_name> Modifier`可以让你修改当前手持物品的效果。
 <br><br>
 - **Template命令方块：** 在此命令方块中，查找以下数据：
 ```
 "minecraft:custom_data":"{uws_effects:{<effect_name>:{key1:value,key2:value,...}}}"
 ```
-`<effect_name>`是即将应用于此物品的效果，在上述情况下，是该UWS物品所关联的效果。你可以通过编辑对象中特定字段的`value`来进行自定义。访问[此页面](https://github.com/akastrmix/Ultimate-Weapons/wiki/%E6%95%88%E6%9E%9C)来查看所有效果的可自定义字段完整列表。
+`<effect_name>`是即将应用于此物品的效果，在上述情况下，是该UWS物品所关联的效果。你可以通过编辑对象中特定字段的`value`来进行自定义。访问[此页面](https://github.com/akastrmix/Ultimate-Weapons/wiki/%E6%95%88%E6%9E%9C)来查看所有效果的完整文档。
 
 编辑完成后，激活此命令方块即可获得自定义版本的目标UWS物品。
 <br><br>
@@ -64,9 +64,22 @@ UWS物品由可自定义的UWS效果所驱动，这些效果是独立的，即�
 ```
 <br>
 
+### 更改你的个人设置
+你可以使用此命令来更改一些游戏内设置（无视权限），例如语言、冷却显示等：
+```mcfunction
+/trigger uws_options
+```
+在命令末尾添加 `set <number>` 来指定具体选项。
+<br><br>
+## 注意事项
+- Ultimate Weapons需要一个永久实体和一个强制加载区块才能正常运行。请避免清除所有实体（如有需要使用`/kill @e[tag=!uws.persistent]`）或移除所有强制加载区块。
+- Ultimate Weapons会修改某些原战利品表以实现特定功能，建议确保此修改不会与其他数据包发生冲突。
+- Ultimate Weapons提供一个`/function uws:unload`命令，用于在卸载数据包前清除所有痕迹。
+<br>
+
 ## 支持的语言
 此数据包支持以下语言（包含文本消息和UWS物品描述）：
-- English (默认)
+- English（默认）
 - 简体中文
 
 可使用以下命令切换语言：
