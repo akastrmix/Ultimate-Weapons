@@ -8,9 +8,9 @@ To obtain an UWS item, simply run this command:
 ```mcfunction
 /function uws:get_item/<item_name>
 ```
-Currently, there are 10 available items, with more unique ones coming in future updates. All items are only obtainable through commands, as we prefer leaving their acquisition and control to server operators, ensuring flexibility and allowing administrators to adapt items to gameplay without directly impacting mechanics through predefined recipes.
+Currently, there are 12 available items, and more unique ones will be coming in future updates. All items are now only obtainable through commands, so as to give server admins full control over how items are distributed and used, allowing them to adapt items to gameplay without directly affecting mechanics through predefined recipes.
 
-To view the list of UWS items, visit [this page](https://github.com/akastrmix/Ultimate-Weapons/wiki/Items).
+For the documentation of all UWS items, visit [this page](https://github.com/akastrmix/Ultimate-Weapons/wiki/Items).
 <br><br>
 ### Customize item / effect
 UWS items are driven by UWS effects that are customizable and independent, meaning the effects are not bound to a specific item and you have full control over where and how they are applied, making things possible like stacking as many effects as you like onto an item. These effects are usually triggered through enchantments, advancements, or `consumable` components. Each UWS item is associated with a unique UWS effect.
@@ -19,13 +19,13 @@ To customize an UWS item / effect, first use this command:
 ```mcfunction
 /function uws:get_item_config/<item_name>
 ```
-This will give you two command blocks with name `<item_name> Template` and `<item_name> Modifier`. The `<item_name> Template` block is responsible for giving you an UWS item with customizable effects, while the `<item_name> Modifier` lets you modify the effects of your held item.
+This will give you two command blocks with name `<item_name> Template` and `<item_name> Modifier`. The `<item_name> Template` block is responsible for giving you an UWS item with effects that can be adjusted, while the `<item_name> Modifier` lets you modify the effects of your held item.
 <br><br>
 - **In Template block:** Inside this block, look for this data:
 ```
 "minecraft:custom_data":"{uws_effects:{<effect_name>:{key1:value,key2:value,...}}}"
 ```
-The `<effect_name>` refers to the effect that will apply to this item; in this case, it is the effect that the UWS item is associated with. You can customize it by editing the `value` of specific fields in the object. Visit [this page](https://github.com/akastrmix/Ultimate-Weapons/wiki/Effects) for a complete list of customizable fields for all effects.
+The `<effect_name>` refers to the effect that will apply to this item; in this case, it is the effect that the UWS item is associated with. You can customize it by editing the `value` of specific fields in the object. Visit [this page](https://github.com/akastrmix/Ultimate-Weapons/wiki/Effects) for the full documentation of all UWS effects.
 
 Once you've finished editing, activate the command block to receive the customized version of the target UWS item.
 <br><br>
@@ -63,6 +63,19 @@ Unban an UWS effect or clear banlist:
 /function uws:unban_effect/<effect_name>
 /function uws:unban_effect/all
 ```
+<br>
+
+### Set your own options
+Whether or not you have permission, you can use this command to change in-game settings such as language, cooldown displays, and more:
+```mcfunction
+/trigger uws_options
+```
+Add `set <number>` at the end of the command to target a specific option.
+<br><br>
+## Notes
+- Ultimate Weapons requires a persistent entity and a forceloaded chunk to function properly. Avoid killing all entities (use `/kill @e[tag=!uws.persistent]` instead) or removing all forceloaded chunks, as these actions will break things.
+- Ultimate Weapons modifies some vanilla loot tables for specific use cases. So it's recommended to ensure there are no conflicts with other packs.
+- Ultimate Weapons provides a `/function uws:unload` command to remove all traces before uninstalling.
 <br>
 
 ## Supported languages
