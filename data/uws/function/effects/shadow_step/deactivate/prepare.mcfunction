@@ -1,0 +1,1 @@
+$function uws:effects/shadow_step/deactivate/execute with storage uws:profile players[{UUID:$(UUID)}].effects.shadow_step

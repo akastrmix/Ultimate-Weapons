@@ -7,24 +7,47 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      {
-        "storage": "uws:lang",
-        "nbt": "en_us.\"item_lore.golden_head.line1\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      },
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.golden_head.line1.part1\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.golden_head.line1.part2\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
       {
         "storage": "uws:lang",
         "nbt": "en_us.\"item_lore.golden_head.line2\"",
         "interpret": true,
         "color": "gray",
         "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.golden_head.line3\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.golden_head.line4\"",
+        "interpret": true,
+        "color": "dark_gray",
+        "italic": false
       }
     ],
     "mode": "replace_section",
     "offset": 1,
-    "size": 2,
+    "size": 4,
     "conditions": [
       {
         "condition": "minecraft:reference",
@@ -36,24 +59,40 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      {
-        "storage": "uws:lang",
-        "nbt": "zh_cn.\"item_lore.golden_head.line1\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      },
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.golden_head.line1.part1\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.golden_head.line1.part2\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
       {
         "storage": "uws:lang",
         "nbt": "zh_cn.\"item_lore.golden_head.line2\"",
         "interpret": true,
         "color": "gray",
         "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "zh_cn.\"item_lore.golden_head.line3\"",
+        "interpret": true,
+        "color": "dark_gray",
+        "italic": false
       }
     ],
     "mode": "replace_section",
     "offset": 1,
-    "size": 2,
+    "size": 4,
     "conditions": [
       {
         "condition": "minecraft:reference",

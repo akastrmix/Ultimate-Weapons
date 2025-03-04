@@ -34,7 +34,8 @@ scoreboard objectives remove uws.anchor_time
 scoreboard objectives remove uws.goldregen_time
 scoreboard objectives remove uws.smelting_time
 scoreboard objectives remove uws.smelting_loop_time
-scoreboard objectives remove uws.phantom_time
+scoreboard objectives remove uws.shadow_step_time
+scoreboard objectives remove uws.shadow_step_active_time
 scoreboard objectives remove uws.smelting.mined_iron
 scoreboard objectives remove uws.smelting.mined_deepslate_iron
 scoreboard objectives remove uws.smelting.mined_gold
@@ -43,7 +44,7 @@ scoreboard objectives remove uws.smelting.mined_copper
 scoreboard objectives remove uws.smelting.mined_deepslate_copper
 scoreboard objectives remove uws.smelting.mined_ancient_debris
 
-schedule clear uws:libraries/internal/option/loop
+schedule clear uws:libraries/internal/loop/main
 
 kill 100000-0-0-0-0
 

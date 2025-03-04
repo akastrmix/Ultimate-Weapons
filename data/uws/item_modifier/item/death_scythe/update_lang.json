@@ -7,20 +7,52 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      {
-        "storage": "uws:lang",
-        "nbt": "en_us.\"item_lore.death_scythe.line1\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      },
-      {
-        "storage": "uws:lang",
-        "nbt": "en_us.\"item_lore.death_scythe.line2\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      },
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.death_scythe.line1.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.death_scythe.line1.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.death_scythe.line1.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.death_scythe.line2.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.death_scythe.line2.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.death_scythe.line2.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
       {
         "storage": "uws:lang",
         "nbt": "en_us.\"item_lore.death_scythe.line3\"",
@@ -30,7 +62,7 @@
       }
     ],
     "mode": "replace_section",
-    "offset": 2,
+    "offset": 1,
     "size": 3,
     "conditions": [
       {
@@ -43,23 +75,55 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      {
-        "storage": "uws:lang",
-        "nbt": "zh_cn.\"item_lore.death_scythe.line1\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      },
-      {
-        "storage": "uws:lang",
-        "nbt": "zh_cn.\"item_lore.death_scythe.line2\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      }
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.death_scythe.line1.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.death_scythe.line1.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.death_scythe.line1.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.death_scythe.line2.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.death_scythe.line2.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.death_scythe.line2.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ]
     ],
     "mode": "replace_section",
-    "offset": 2,
+    "offset": 1,
     "size": 3,
     "conditions": [
       {

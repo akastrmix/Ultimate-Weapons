@@ -1,51 +1,81 @@
 # item
-data modify storage uws:lang en_us."item_lore.excalibur.line1" set value {"text":"Smites on hit, dealing 2.5 hearts"}
-data modify storage uws:lang en_us."item_lore.excalibur.line2" set value {"text":"of damage (5 second cooldown)"}
+data modify storage uws:lang en_us."item_lore.excalibur.line1.part1" set value {"text":"Smites on hit, dealing "}
+data modify storage uws:lang en_us."item_lore.excalibur.line1.part2" set value {"text":"2.5"}
+data modify storage uws:lang en_us."item_lore.excalibur.line1.part3" set value {"text":" hearts"}
+data modify storage uws:lang en_us."item_lore.excalibur.line2" set value {"text":"of damage"}
+data modify storage uws:lang en_us."item_lore.excalibur.line3" set value {"text":"5s Cooldown"}
 
-data modify storage uws:lang en_us."item_lore.axe_of_perun.line1" set value {"text":"Strikes lightning, dealing 1.5 hearts"}
-data modify storage uws:lang en_us."item_lore.axe_of_perun.line2" set value {"text":"of damage (7 second cooldown)"}
+data modify storage uws:lang en_us."item_lore.axe_of_perun.line1" set value {"text":"Strikes lightning on hit, dealing"}
+data modify storage uws:lang en_us."item_lore.axe_of_perun.line2.part1" set value {"text":"2"}
+data modify storage uws:lang en_us."item_lore.axe_of_perun.line2.part2" set value {"text":" hearts of damage"}
+data modify storage uws:lang en_us."item_lore.axe_of_perun.line3" set value {"text":"7s Cooldown"}
 
-data modify storage uws:lang en_us."item_lore.exodus.line1" set value {"text":"Regenerates a small portion of"}
-data modify storage uws:lang en_us."item_lore.exodus.line2" set value {"text":"health when hitting your target"}
-data modify storage uws:lang en_us."item_lore.exodus.line3" set value {"text":"(2 second cooldown)"}
+data modify storage uws:lang en_us."item_lore.exodus.line1.part1" set value {"text":"Gains "}
+data modify storage uws:lang en_us."item_lore.exodus.line1.part2" set value {"text":"Regeneration II"}
+data modify storage uws:lang en_us."item_lore.exodus.line1.part3" set value {"text":" for "}
+data modify storage uws:lang en_us."item_lore.exodus.line1.part4" set value {"text":"3"}
+data modify storage uws:lang en_us."item_lore.exodus.line1.part5" set value {"text":" seconds"}
+data modify storage uws:lang en_us."item_lore.exodus.line2" set value {"text":"when you hit a target"}
+data modify storage uws:lang en_us."item_lore.exodus.line3" set value {"text":"2s Cooldown"}
 
-data modify storage uws:lang en_us."item_lore.barbarian_chestplate.line1" set value {"text":"Grants Strength I & Resistance I"}
+data modify storage uws:lang en_us."item_lore.barbarian_chestplate.line1.part1" set value {"text":"Grants "}
+data modify storage uws:lang en_us."item_lore.barbarian_chestplate.line1.part2" set value {"text":"Strength I"}
+data modify storage uws:lang en_us."item_lore.barbarian_chestplate.line1.part3" set value {"text":" and "}
+data modify storage uws:lang en_us."item_lore.barbarian_chestplate.line1.part4" set value {"text":"Resistance I"}
 data modify storage uws:lang en_us."item_lore.barbarian_chestplate.line2" set value {"text":"while wearing"}
 
-data modify storage uws:lang en_us."item_lore.death_scythe.line1" set value {"text":"Deals 25% of your target's health"}
-data modify storage uws:lang en_us."item_lore.death_scythe.line2" set value {"text":"as damage, and lifesteals 25% of"}
+data modify storage uws:lang en_us."item_lore.death_scythe.line1.part1" set value {"text":"Deals "}
+data modify storage uws:lang en_us."item_lore.death_scythe.line1.part2" set value {"text":"25%"}
+data modify storage uws:lang en_us."item_lore.death_scythe.line1.part3" set value {"text":" of your target's health"}
+data modify storage uws:lang en_us."item_lore.death_scythe.line2.part1" set value {"text":"as damage, and lifesteals "}
+data modify storage uws:lang en_us."item_lore.death_scythe.line2.part2" set value {"text":"25%"}
+data modify storage uws:lang en_us."item_lore.death_scythe.line2.part3" set value {"text":" of"}
 data modify storage uws:lang en_us."item_lore.death_scythe.line3" set value {"text":"the damage dealt"}
 
-data modify storage uws:lang en_us."item_lore.bloodlust.section1.line1" set value {"text":"Killing mobs with this sword gradually"}
-data modify storage uws:lang en_us."item_lore.bloodlust.section1.line2" set value {"text":"grants additional levels of Sharpness,"}
-data modify storage uws:lang en_us."item_lore.bloodlust.section1.line3" set value {"text":"up to a maximum of 5"}
+data modify storage uws:lang en_us."item_lore.bloodlust.section1.line1" set value {"text":"Gradually gains additional levels of"}
+data modify storage uws:lang en_us."item_lore.bloodlust.section1.line2" set value {"text":"Sharpness with kills, up to a limit of 5"}
 data modify storage uws:lang en_us."item_lore.bloodlust.section2.line1" set value {"text":"Bonus: "}
 data modify storage uws:lang en_us."item_lore.bloodlust.section2.line2.part1" set value {"text":"Progress: "}
 data modify storage uws:lang en_us."item_lore.bloodlust.section2.line2.part2" set value {"text":" (MAX)"}
 
 data modify storage uws:lang en_us."item_lore.world_breaker.line1" set value {"text":"Instantly destroys blocks that are"}
 data modify storage uws:lang en_us."item_lore.world_breaker.line2" set value {"text":"unbreakable or take a long time to"}
-data modify storage uws:lang en_us."item_lore.world_breaker.line3" set value {"text":"mine (1 second cooldown)"}
+data modify storage uws:lang en_us."item_lore.world_breaker.line3" set value {"text":"mine"}
+data modify storage uws:lang en_us."item_lore.world_breaker.line4" set value {"text":"1s Cooldown"}
 
-data modify storage uws:lang en_us."item_lore.artemis_bow.line1" set value {"text":"Fired arrows will home in on the"}
-data modify storage uws:lang en_us."item_lore.artemis_bow.line2" set value {"text":"nearest mob within a range of 6"}
-data modify storage uws:lang en_us."item_lore.artemis_bow.line3" set value {"text":"blocks"}
+data modify storage uws:lang en_us."item_lore.artemis_bow.line1" set value {"text":"Arrows fired from this weapon"}
+data modify storage uws:lang en_us."item_lore.artemis_bow.line2" set value {"text":"will home in on the nearest mob"}
+data modify storage uws:lang en_us."item_lore.artemis_bow.line3.part1" set value {"text":"within "}
+data modify storage uws:lang en_us."item_lore.artemis_bow.line3.part2" set value {"text":"6"}
+data modify storage uws:lang en_us."item_lore.artemis_bow.line3.part3" set value {"text":" blocks"}
 
 data modify storage uws:lang en_us."item_lore.voidbox.line1" set value {"text":"Place one Voidbox anywhere in the"}
 data modify storage uws:lang en_us."item_lore.voidbox.line2" set value {"text":"world, and upon placing the second,"}
 data modify storage uws:lang en_us."item_lore.voidbox.line3" set value {"text":"you will be teleported back to the"}
 data modify storage uws:lang en_us."item_lore.voidbox.line4" set value {"text":"first, consuming both"}
 
-data modify storage uws:lang en_us."item_lore.golden_head.line1" set value {"text":"Consume to gain Regeneration III"}
-data modify storage uws:lang en_us."item_lore.golden_head.line2" set value {"text":"(0:05) and Absorption I (2:00)"}
+data modify storage uws:lang en_us."item_lore.golden_head.line1.part1" set value {"text":"CONSUME"}
+data modify storage uws:lang en_us."item_lore.golden_head.line1.part2" set value {"text":" to gain Regeneration III"}
+data modify storage uws:lang en_us."item_lore.golden_head.line2" set value {"text":"(0:05), Absorption I (2:00), and"}
+data modify storage uws:lang en_us."item_lore.golden_head.line3" set value {"text":"Speed I (0:10)"}
+data modify storage uws:lang en_us."item_lore.golden_head.line4" set value {"text":"1s Cooldown"}
 
-data modify storage uws:lang en_us."item_lore.smelter_pickaxe" set value {"text":"Smelts ores automatically"}
+data modify storage uws:lang en_us."item_lore.smelter_pickaxe.line1" set value {"text":"A pickaxe that smelts ores"}
+data modify storage uws:lang en_us."item_lore.smelter_pickaxe.line2" set value {"text":"automatically"}
 
-data modify storage uws:lang en_us."item_lore.shadow_blade.line1" set value {"text":"Right click to gain Invisibility III"}
-data modify storage uws:lang en_us."item_lore.shadow_blade.line2" set value {"text":"and Speed III for 10 seconds"}
-data modify storage uws:lang en_us."item_lore.shadow_blade.line3" set value {"text":"(30 second cooldown)"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line1.part1" set value {"text":"RIGHT CLICK"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line1.part2" set value {"text":" to gain "}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line1.part3" set value {"text":"Invisibility III"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line2.part1" set value {"text":"and "}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line2.part2" set value {"text":"Speed III"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line2.part3" set value {"text":" for "}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line2.part4" set value {"text":"10"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line2.part5" set value {"text":" seconds. This"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line3" set value {"text":"is cancelled if you get hit or critical"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line4" set value {"text":"hit other mob"}
+data modify storage uws:lang en_us."item_lore.shadow_blade.line5" set value {"text":"30s Cooldown"}
 
-# text
+# text message
 data modify storage uws:lang en_us."text.datapack_unloaded" set value {"text":"Ultimate Weapons: Datapack has been unloaded"}
 data modify storage uws:lang en_us."text.uws_help" set value {"text":"UWS Help"}
 data modify storage uws:lang en_us."text.uws_help.content1" set value {"text":"Reset all cooldowns"}
@@ -54,16 +84,24 @@ data modify storage uws:lang en_us."text.cooldowns_reset" set value {"text":"All
 data modify storage uws:lang en_us."text.uws_options" set value {"text":"UWS Options"}
 data modify storage uws:lang en_us."text.uws_options.content1" set value {"text":"Set your preferred language to English"}
 data modify storage uws:lang en_us."text.uws_options.content2" set value {"text":"Set your preferred language to Simplified Chinese"}
-data modify storage uws:lang en_us."text.uws_options.content3" set value {"text":"Toggle cooldown hints"}
-data modify storage uws:lang en_us."text.uws_options.content4" set value {"text":"Toggle cooldown display position"}
-data modify storage uws:lang en_us."text.uws_options.content5" set value {"text":"Toggle hints for using Death's Scythe"}
-data modify storage uws:lang en_us."text.uws_options.content6" set value {"text":"Toggle hints for using Voidbox"}
-data modify storage uws:lang en_us."text.uws_options.content7" set value {"text":"Toggle hints for using Golden Head"}
+data modify storage uws:lang en_us."text.uws_options.content3" set value {"text":"Switch weapon cooldown hints"}
+data modify storage uws:lang en_us."text.uws_options.content4" set value {"text":"Switch armor cooldown hints"}
+data modify storage uws:lang en_us."text.uws_options.content5" set value {"text":"Switch weapon cooldown ready notifications (only for CD longer than 1 second)"}
+data modify storage uws:lang en_us."text.uws_options.content6" set value {"text":"Toggle hints for using Death's Scythe"}
+data modify storage uws:lang en_us."text.uws_options.content7" set value {"text":"Toggle hints for using Voidbox"}
+data modify storage uws:lang en_us."text.uws_options.content8" set value {"text":"Toggle hints for using Golden Head"}
+data modify storage uws:lang en_us."text.feature_unavailable" set value {"text":"This feature is temporarily unavailable"}
 
-data modify storage uws:lang en_us."text.cooldown_hints_enabled" set value {"text":"Successfully enabled cooldown hints"}
-data modify storage uws:lang en_us."text.cooldown_hints_disabled" set value {"text":"Successfully disabled cooldown hints"}
-data modify storage uws:lang en_us."text.actionbar_hints_selected" set value {"text":"Cooldown hints are now displayed in the actionbar"}
-data modify storage uws:lang en_us."text.chat_hints_selected" set value {"text":"Cooldown hints are now displayed in the chat"}
+data modify storage uws:lang en_us."text.actionbar_hints_for_weapon_selected" set value {"text":"Cooldown hints for weapons are now displayed in the actionbar"}
+data modify storage uws:lang en_us."text.chat_hints_for_weapon_selected" set value {"text":"Cooldown hints for weapons are now displayed in the chat"}
+data modify storage uws:lang en_us."text.cooldown_hints_for_weapon_disabled" set value {"text":"Cooldown hints for weapons are now disabled"}
+data modify storage uws:lang en_us."text.actionbar_hints_for_armor_selected" set value {"text":"Cooldown hints for armor are now displayed in the actionbar"}
+data modify storage uws:lang en_us."text.chat_hints_for_armor_selected" set value {"text":"Cooldown hints for armor are now displayed in the chat"}
+data modify storage uws:lang en_us."text.cooldown_hints_for_armor_disabled" set value {"text":"Cooldown hints for armor are now disabled"}
+data modify storage uws:lang en_us."text.actionbar_notifications_selected" set value {"text":"Cooldown ready notifications for weapons are now displayed in the actionbar"}
+data modify storage uws:lang en_us."text.chat_notifications_selected" set value {"text":"Cooldown ready notifications for weapons are now displayed in the chat"}
+data modify storage uws:lang en_us."text.ready_notifications_disabled" set value {"text":"Cooldown ready notifications for weapons are now disabled"}
+
 data modify storage uws:lang en_us."text.scythe_hints_enabled" set value {"text":"Successfully enabled hints for using Death's Scythe"}
 data modify storage uws:lang en_us."text.scythe_hints_disabled" set value {"text":"Successfully disabled hints for using Death's Scythe"}
 data modify storage uws:lang en_us."text.voidbox_hints_enabled" set value {"text":"Successfully enabled hints for using Voidbox"}

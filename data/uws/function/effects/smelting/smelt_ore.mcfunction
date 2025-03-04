@@ -5,7 +5,7 @@ execute store result score #temp_distance uws.state run attribute @s minecraft:b
 execute store result storage uws:temp entity_data.distance int 1 run scoreboard players add #temp_distance uws.state 2
 
 execute store result score #temp_gametime uws.state run time query gametime
-execute if score #temp_gametime uws.state < @s uws.smelting_time unless entity @s[tag=uws.ignore_cooldown_hints] run function uws:libraries/effect/display_cooldown {effect:smelting,equipment:weapon}
+execute if score #temp_gametime uws.state < @s uws.smelting_time if function uws:libraries/effect/is_weapon_hints_enabled run function uws:libraries/effect/display_cooldown {effect:smelting,equipment:weapon}
 scoreboard players operation #temp_cooldown uws.state = @s uws.smelting_time
 
 execute if score @s uws.smelting.mined_iron matches 1.. anchored eyes positioned ^ ^ ^ run function uws:effects/smelting/ores/iron/check with storage uws:temp entity_data

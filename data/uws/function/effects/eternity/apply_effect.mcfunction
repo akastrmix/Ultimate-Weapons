@@ -6,7 +6,7 @@ execute if predicate uws:is_lang_mismatch/head run function uws:libraries/intern
 execute if data storage uws:settings banned_effects[{name:eternity}] run return run function uws:libraries/effect/terminate
 
 execute store result score #temp_gametime uws.state run time query gametime
-execute if score #temp_gametime uws.state < @s uws.eternity_time run return run execute unless entity @s[tag=uws.ignore_cooldown_hints] run function uws:libraries/effect/display_cooldown {effect:eternity,equipment:helmet}
+execute if score #temp_gametime uws.state < @s uws.eternity_time run return run execute if function uws:libraries/effect/is_armor_hints_enabled run function uws:libraries/effect/display_cooldown {effect:eternity,equipment:helmet}
 
 data remove storage uws:temp item_data
 data modify storage uws:temp item_data set from entity @s Inventory[{Slot:103b}].components.minecraft:custom_data.uws_effects.eternity

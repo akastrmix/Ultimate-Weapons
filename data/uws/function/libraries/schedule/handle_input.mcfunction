@@ -18,8 +18,10 @@
 $data modify storage uws:temp schedule.input set value $(with)
 
 execute store result storage uws:temp schedule.input.time int 1 run function uws:libraries/schedule/create_task with storage uws:temp schedule.input
+execute store result storage uws:temp schedule.input.id int 1 run scoreboard players add #schedule uws.state 1
 
 execute unless score @s uws.schedule_id = @s uws.schedule_id store result score @s uws.schedule_id run scoreboard players add #uws_general uws.schedule_id 1
 execute store result storage uws:temp schedule.input.entity_id int 1 run scoreboard players get @s uws.schedule_id
 
 data modify storage uws:temp schedule.queue prepend from storage uws:temp schedule.input
+return run scoreboard players get #schedule uws.state

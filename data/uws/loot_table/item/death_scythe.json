@@ -36,7 +36,6 @@
                 },
                 "minecraft:item_name": "{\"text\":\"Death's Scythe\",\"color\":\"light_purple\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"Oblivion\",\"color\":\"blue\",\"italic\":false}",
                   "{\"text\":\"\"}"
                 ]
               }

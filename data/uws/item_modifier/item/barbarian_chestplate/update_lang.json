@@ -7,13 +7,36 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      {
-        "storage": "uws:lang",
-        "nbt": "en_us.\"item_lore.barbarian_chestplate.line1\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      },
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.barbarian_chestplate.line1.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.barbarian_chestplate.line1.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.barbarian_chestplate.line1.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.barbarian_chestplate.line1.part4\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        }
+      ],
       {
         "storage": "uws:lang",
         "nbt": "en_us.\"item_lore.barbarian_chestplate.line2\"",
@@ -23,7 +46,7 @@
       }
     ],
     "mode": "replace_section",
-    "offset": 2,
+    "offset": 1,
     "size": 2,
     "conditions": [
       {
@@ -36,16 +59,39 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      {
-        "storage": "uws:lang",
-        "nbt": "zh_cn.\"item_lore.barbarian_chestplate\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      }
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.barbarian_chestplate.line1.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.barbarian_chestplate.line1.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.barbarian_chestplate.line1.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.barbarian_chestplate.line1.part4\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        }
+      ]
     ],
     "mode": "replace_section",
-    "offset": 2,
+    "offset": 1,
     "size": 2,
     "conditions": [
       {

@@ -36,7 +36,6 @@
                 },
                 "minecraft:item_name": "{\"text\":\"Axe of Perun\",\"color\":\"gold\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"Thunder\",\"color\":\"blue\",\"italic\":false}",
                   "{\"text\":\"\"}"
                 ]
               }

@@ -13,8 +13,7 @@
                 "minecraft:custom_data": "{uws_item:{type:bloodlust,use_custom_lore:0b},uws_effects:{edging:{}}}",
                 "minecraft:enchantments": {
                   "levels": {
-                    "minecraft:sharpness": 5,
-                    "uws:edging": 1
+                    "minecraft:sharpness": 5
                   }
                 },
                 "minecraft:attribute_modifiers": {

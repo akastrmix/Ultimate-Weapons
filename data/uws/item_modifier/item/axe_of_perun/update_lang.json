@@ -14,17 +14,33 @@
         "color": "gray",
         "italic": false
       },
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.axe_of_perun.line2.part1\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.axe_of_perun.line2.part2\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
       {
         "storage": "uws:lang",
-        "nbt": "en_us.\"item_lore.axe_of_perun.line2\"",
+        "nbt": "en_us.\"item_lore.axe_of_perun.line3\"",
         "interpret": true,
-        "color": "gray",
+        "color": "dark_gray",
         "italic": false
       }
     ],
     "mode": "replace_section",
-    "offset": 2,
-    "size": 2,
+    "offset": 1,
+    "size": 3,
     "conditions": [
       {
         "condition": "minecraft:reference",
@@ -36,17 +52,40 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.axe_of_perun.line1.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.axe_of_perun.line1.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.axe_of_perun.line1.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
       {
         "storage": "uws:lang",
-        "nbt": "zh_cn.\"item_lore.axe_of_perun\"",
+        "nbt": "zh_cn.\"item_lore.axe_of_perun.line2\"",
         "interpret": true,
-        "color": "gray",
+        "color": "dark_gray",
         "italic": false
       }
     ],
     "mode": "replace_section",
-    "offset": 2,
-    "size": 2,
+    "offset": 1,
+    "size": 3,
     "conditions": [
       {
         "condition": "minecraft:reference",

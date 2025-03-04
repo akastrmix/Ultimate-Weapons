@@ -1,26 +1,70 @@
 # item
-data modify storage uws:lang zh_cn."item_lore.excalibur" set value {"text":"攻击时产生爆炸，对目标造成5点真实伤害 (5秒冷却)"}
-data modify storage uws:lang zh_cn."item_lore.axe_of_perun" set value {"text":"攻击时生成闪电，对目标造成4点真实伤害 (7秒冷却)"}
-data modify storage uws:lang zh_cn."item_lore.exodus" set value {"text":"攻击时获得短暂生命恢复效果 (2秒冷却)"}
-data modify storage uws:lang zh_cn."item_lore.barbarian_chestplate" set value {"text":"穿戴时获得力量和抗性提升效果"}
-data modify storage uws:lang zh_cn."item_lore.death_scythe.line1" set value {"text":"对目标造成对方血量25%的伤害，并吸取"}
-data modify storage uws:lang zh_cn."item_lore.death_scythe.line2" set value {"text":"伤害的25%恢复自身生命值"}
-data modify storage uws:lang zh_cn."item_lore.bloodlust.section1.line1" set value {"text":"使用此武器击杀生物，将随着击杀数的增加"}
-data modify storage uws:lang zh_cn."item_lore.bloodlust.section1.line2" set value {"text":"获得额外的锋利等级提升，最高提升5级"}
+data modify storage uws:lang zh_cn."item_lore.excalibur.line1.part1" set value {"text":"攻击时产生爆炸，对目标造成 "}
+data modify storage uws:lang zh_cn."item_lore.excalibur.line1.part2" set value {"text":"5"}
+data modify storage uws:lang zh_cn."item_lore.excalibur.line1.part3" set value {"text":" 点伤害"}
+data modify storage uws:lang zh_cn."item_lore.excalibur.line2" set value {"text":"5秒冷却时间"}
+
+data modify storage uws:lang zh_cn."item_lore.axe_of_perun.line1.part1" set value {"text":"攻击时生成闪电，对目标造成 "}
+data modify storage uws:lang zh_cn."item_lore.axe_of_perun.line1.part2" set value {"text":"4"}
+data modify storage uws:lang zh_cn."item_lore.axe_of_perun.line1.part3" set value {"text":" 点伤害"}
+data modify storage uws:lang zh_cn."item_lore.axe_of_perun.line2" set value {"text":"7秒冷却时间"}
+
+data modify storage uws:lang zh_cn."item_lore.exodus.line1.part1" set value {"text":"攻击目标时获得 "}
+data modify storage uws:lang zh_cn."item_lore.exodus.line1.part2" set value {"text":"3"}
+data modify storage uws:lang zh_cn."item_lore.exodus.line1.part3" set value {"text":" 秒 "}
+data modify storage uws:lang zh_cn."item_lore.exodus.line1.part4" set value {"text":"生命恢复II"}
+data modify storage uws:lang zh_cn."item_lore.exodus.line2" set value {"text":"2秒冷却时间"}
+
+data modify storage uws:lang zh_cn."item_lore.barbarian_chestplate.line1.part1" set value {"text":"穿戴时获得 "}
+data modify storage uws:lang zh_cn."item_lore.barbarian_chestplate.line1.part2" set value {"text":"力量I"}
+data modify storage uws:lang zh_cn."item_lore.barbarian_chestplate.line1.part3" set value {"text":" 和 "}
+data modify storage uws:lang zh_cn."item_lore.barbarian_chestplate.line1.part4" set value {"text":"抗性提升I"}
+
+data modify storage uws:lang zh_cn."item_lore.death_scythe.line1.part1" set value {"text":"对目标造成对方血量 "}
+data modify storage uws:lang zh_cn."item_lore.death_scythe.line1.part2" set value {"text":"25%"}
+data modify storage uws:lang zh_cn."item_lore.death_scythe.line1.part3" set value {"text":" 的伤害，并吸取"}
+data modify storage uws:lang zh_cn."item_lore.death_scythe.line2.part1" set value {"text":"伤害的 "}
+data modify storage uws:lang zh_cn."item_lore.death_scythe.line2.part2" set value {"text":"25%"}
+data modify storage uws:lang zh_cn."item_lore.death_scythe.line2.part3" set value {"text":" 恢复自身生命值"}
+
+data modify storage uws:lang zh_cn."item_lore.bloodlust.section1.line1" set value {"text":"随着此武器击杀数的增加逐渐获得额外的锋利"}
+data modify storage uws:lang zh_cn."item_lore.bloodlust.section1.line2" set value {"text":"等级提升，最高提升5级"}
 data modify storage uws:lang zh_cn."item_lore.bloodlust.section2.line1" set value {"text":"当前增益: "}
 data modify storage uws:lang zh_cn."item_lore.bloodlust.section2.line2.part1" set value {"text":"进度: "}
 data modify storage uws:lang zh_cn."item_lore.bloodlust.section2.line2.part2" set value {"text":" (满级)"}
+
 data modify storage uws:lang zh_cn."item_lore.world_breaker.line1" set value {"text":"对无法破坏或者需要耗费较长时间挖掘"}
-data modify storage uws:lang zh_cn."item_lore.world_breaker.line2" set value {"text":"的方块产生瞬间破坏效果 (1秒冷却)"}
-data modify storage uws:lang zh_cn."item_lore.artemis_bow" set value {"text":"射出的箭矢将自动追踪6格范围内最近的生物"}
+data modify storage uws:lang zh_cn."item_lore.world_breaker.line2" set value {"text":"的方块产生瞬间破坏效果"}
+data modify storage uws:lang zh_cn."item_lore.world_breaker.line3" set value {"text":"1秒冷却时间"}
+
+data modify storage uws:lang zh_cn."item_lore.artemis_bow.line1.part1" set value {"text":"使用此武器射出的箭矢将追踪 "}
+data modify storage uws:lang zh_cn."item_lore.artemis_bow.line1.part2" set value {"text":"6"}
+data modify storage uws:lang zh_cn."item_lore.artemis_bow.line1.part3" set value {"text":" 格范围"}
+data modify storage uws:lang zh_cn."item_lore.artemis_bow.line2" set value {"text":"内最近的生物"}
+
 data modify storage uws:lang zh_cn."item_lore.voidbox.line1" set value {"text":"在世界的任何地方放置此箱子，当放置第二"}
 data modify storage uws:lang zh_cn."item_lore.voidbox.line2" set value {"text":"个时，你将被传送回第一个箱子的位置"}
-data modify storage uws:lang zh_cn."item_lore.golden_head.line1" set value {"text":"消耗后获得生命恢复III (0:05) 和"}
-data modify storage uws:lang zh_cn."item_lore.golden_head.line2" set value {"text":"伤害吸收I (2:00)"}
-data modify storage uws:lang zh_cn."item_lore.smelter_pickaxe" set value {"text":"自动冶炼矿物"}
-data modify storage uws:lang zh_cn."item_lore.shadow_blade" set value {"text":"右键获得10秒隐身III和迅捷III (30秒冷却)"}
 
-# text
+data modify storage uws:lang zh_cn."item_lore.golden_head.line1.part1" set value {"text":"消耗"}
+data modify storage uws:lang zh_cn."item_lore.golden_head.line1.part2" set value {"text":"后获得生命恢复III (0:05)，伤害吸收I"}
+data modify storage uws:lang zh_cn."item_lore.golden_head.line2" set value {"text":"(2:00) 和迅捷I (0:10)"}
+data modify storage uws:lang zh_cn."item_lore.golden_head.line3" set value {"text":"1秒冷却时间"}
+
+data modify storage uws:lang zh_cn."item_lore.smelter_pickaxe" set value {"text":"一把能自动冶炼矿物的镐子"}
+
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part1" set value {"text":"右键点击"}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part2" set value {"text":"获得 "}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part3" set value {"text":"10"}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part4" set value {"text":" 秒 "}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part5" set value {"text":"隐身III"}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part6" set value {"text":" 和 "}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part7" set value {"text":"迅捷III"}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part8" set value {"text":"，"}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line2" set value {"text":"若在此过程中被击中或暴击其他生物，效果"}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line3" set value {"text":"将取消"}
+data modify storage uws:lang zh_cn."item_lore.shadow_blade.line4" set value {"text":"30秒冷却时间"}
+
+# text message
 data modify storage uws:lang zh_cn."text.datapack_unloaded" set value {"text":"Ultimate Weapons: 数据包已卸载"}
 data modify storage uws:lang zh_cn."text.uws_help" set value {"text":"UWS帮助列表"}
 data modify storage uws:lang zh_cn."text.uws_help.content1" set value {"text":"重置所有冷却时间"}
@@ -29,16 +73,24 @@ data modify storage uws:lang zh_cn."text.cooldowns_reset" set value {"text":"所
 data modify storage uws:lang zh_cn."text.uws_options" set value {"text":"UWS选项"}
 data modify storage uws:lang zh_cn."text.uws_options.content1" set value {"text":"设置你的偏好语言为英语"}
 data modify storage uws:lang zh_cn."text.uws_options.content2" set value {"text":"设置你的偏好语言为简体中文"}
-data modify storage uws:lang zh_cn."text.uws_options.content3" set value {"text":"切换物品冷却时间提示"}
-data modify storage uws:lang zh_cn."text.uws_options.content4" set value {"text":"切换冷却时间提示显示位置"}
-data modify storage uws:lang zh_cn."text.uws_options.content5" set value {"text":"切换死神镰刀使用提示"}
-data modify storage uws:lang zh_cn."text.uws_options.content6" set value {"text":"切换虚空箱使用提示"}
-data modify storage uws:lang zh_cn."text.uws_options.content7" set value {"text":"切换金头使用提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content3" set value {"text":"切换武器冷却时间提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content4" set value {"text":"切换护甲冷却时间提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content5" set value {"text":"切换武器冷却就绪通知 (仅适用大于1秒的CD)"}
+data modify storage uws:lang zh_cn."text.uws_options.content6" set value {"text":"切换死神镰刀使用提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content7" set value {"text":"切换虚空箱使用提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content8" set value {"text":"切换金头使用提示"}
+data modify storage uws:lang zh_cn."text.feature_unavailable" set value {"text":"此功能暂不可用"}
 
-data modify storage uws:lang zh_cn."text.cooldown_hints_enabled" set value {"text":"成功启用物品冷却时间提示"}
-data modify storage uws:lang zh_cn."text.cooldown_hints_disabled" set value {"text":"成功禁用物品冷却时间提示"}
-data modify storage uws:lang zh_cn."text.actionbar_hints_selected" set value {"text":"物品冷却时间提示显示位置已更改为动作栏"}
-data modify storage uws:lang zh_cn."text.chat_hints_selected" set value {"text":"物品冷却时间提示显示位置已更改为聊天栏"}
+data modify storage uws:lang zh_cn."text.actionbar_hints_for_weapon_selected" set value {"text":"武器冷却时间提示显示位置已更改为动作栏"}
+data modify storage uws:lang zh_cn."text.chat_hints_for_weapon_selected" set value {"text":"武器冷却时间提示显示位置已更改为聊天栏"}
+data modify storage uws:lang zh_cn."text.cooldown_hints_for_weapon_disabled" set value {"text":"武器冷却时间提示已禁用"}
+data modify storage uws:lang zh_cn."text.actionbar_hints_for_armor_selected" set value {"text":"护甲冷却时间提示显示位置已更改为动作栏"}
+data modify storage uws:lang zh_cn."text.chat_hints_for_armor_selected" set value {"text":"护甲冷却时间提示显示位置已更改为聊天栏"}
+data modify storage uws:lang zh_cn."text.cooldown_hints_for_armor_disabled" set value {"text":"护甲冷却时间提示已禁用"}
+data modify storage uws:lang zh_cn."text.actionbar_notifications_selected" set value {"text":"武器冷却就绪通知显示位置已更改为动作栏"}
+data modify storage uws:lang zh_cn."text.chat_notifications_selected" set value {"text":"武器冷却就绪通知显示位置已更改为聊天栏"}
+data modify storage uws:lang zh_cn."text.ready_notifications_disabled" set value {"text":"武器冷却就绪通知已禁用"}
+
 data modify storage uws:lang zh_cn."text.scythe_hints_enabled" set value {"text":"成功启用死神镰刀使用提示"}
 data modify storage uws:lang zh_cn."text.scythe_hints_disabled" set value {"text":"成功禁用死神镰刀使用提示"}
 data modify storage uws:lang zh_cn."text.voidbox_hints_enabled" set value {"text":"成功启用虚空箱使用提示"}

@@ -9,7 +9,14 @@
     "lore": [
       {
         "storage": "uws:lang",
-        "nbt": "en_us.\"item_lore.smelter_pickaxe\"",
+        "nbt": "en_us.\"item_lore.smelter_pickaxe.line1\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "en_us.\"item_lore.smelter_pickaxe.line2\"",
         "interpret": true,
         "color": "gray",
         "italic": false
@@ -17,7 +24,7 @@
     ],
     "mode": "replace_section",
     "offset": 1,
-    "size": 1,
+    "size": 2,
     "conditions": [
       {
         "condition": "minecraft:reference",
@@ -39,7 +46,7 @@
     ],
     "mode": "replace_section",
     "offset": 1,
-    "size": 1,
+    "size": 2,
     "conditions": [
       {
         "condition": "minecraft:reference",

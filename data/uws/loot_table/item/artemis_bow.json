@@ -18,7 +18,6 @@
                 },
                 "minecraft:item_name": "{\"text\":\"Artemis' Bow\",\"color\":\"red\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"Hunting\",\"color\":\"blue\",\"italic\":false}",
                   "{\"text\":\"\"}"
                 ]
               }

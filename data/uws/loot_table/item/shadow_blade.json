@@ -10,9 +10,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_data": "{uws_item:{type:shadow_blade},uws_effects:{phantom:{}}}",
+                "minecraft:custom_data": "{uws_item:{type:shadow_blade},uws_effects:{shadow_step:{}}}",
                 "minecraft:consumable": {
-                  "consume_seconds": 0,
+                  "consume_seconds": 2147483647,
                   "sound": "minecraft:intentionally_empty",
                   "has_consume_particles": false
                 },

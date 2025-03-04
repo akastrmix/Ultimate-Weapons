@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{uws_effects:{shadow_step:{}}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "uws:effects/shadow_step/apply_effect"
+  }
+}

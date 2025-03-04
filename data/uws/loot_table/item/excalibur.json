@@ -36,9 +36,7 @@
                 },
                 "minecraft:item_name": "{\"text\":\"Excalibur\",\"color\":\"gold\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"Chaos\",\"color\":\"blue\",\"italic\":false}",
-                  "{\"text\":\"\"}",
-                  "{\"text\":\"The Holy Sword\",\"color\":\"gold\",\"italic\":false}"
+                  "{\"text\":\"\"}"
                 ]
               }
             },

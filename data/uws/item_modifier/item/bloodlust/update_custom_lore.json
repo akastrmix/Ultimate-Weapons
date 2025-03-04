@@ -54,7 +54,7 @@
           ]
         ],
         "mode": "replace_section",
-        "offset": 4,
+        "offset": 3,
         "conditions": [
           {
             "condition": "minecraft:reference",
@@ -161,7 +161,7 @@
           ]
         ],
         "mode": "replace_section",
-        "offset": 4,
+        "offset": 3,
         "conditions": [
           {
             "condition": "minecraft:reference",
@@ -201,7 +201,7 @@
           ]
         ],
         "mode": "replace_section",
-        "offset": 6,
+        "offset": 5,
         "conditions": [
           {
             "condition": "minecraft:all_of",
@@ -270,7 +270,7 @@
           ]
         ],
         "mode": "replace_section",
-        "offset": 6,
+        "offset": 5,
         "conditions": [
           {
             "condition": "minecraft:all_of",

@@ -18,7 +18,6 @@
                 },
                 "minecraft:item_name": "{\"text\":\"Barbarian Chestplate\",\"color\":\"green\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"Rage\",\"color\":\"blue\",\"italic\":false}",
                   "{\"text\":\"\"}"
                 ]
               }

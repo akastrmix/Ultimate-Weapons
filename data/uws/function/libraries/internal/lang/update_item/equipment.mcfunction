@@ -1,5 +1,4 @@
 advancement revoke @s only uws:internal/lang/change_dimension
-scoreboard players set @s uws.leave_game 0
 
 function uws:libraries/internal/lang/score/validate
 execute if predicate uws:is_lang_mismatch/mainhand run function uws:libraries/internal/lang/update_item/mainhand with entity @s SelectedItem.components.minecraft:custom_data.uws_item

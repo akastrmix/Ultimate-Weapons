@@ -11,14 +11,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": "{uws_item:{type:exodus},uws_effects:{eternity:{}}}",
-                "minecraft:enchantments": {
-                  "levels": {
-                    "uws:eternity": 1
-                  }
-                },
                 "minecraft:item_name": "{\"text\":\"Exodus\",\"color\":\"gold\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"Aeon\",\"color\":\"blue\",\"italic\":false}",
                   "{\"text\":\"\"}"
                 ]
               }

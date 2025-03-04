@@ -20,7 +20,8 @@ scoreboard objectives add uws.anchor_time dummy
 scoreboard objectives add uws.goldregen_time dummy
 scoreboard objectives add uws.smelting_time dummy
 scoreboard objectives add uws.smelting_loop_time dummy
-scoreboard objectives add uws.phantom_time dummy
+scoreboard objectives add uws.shadow_step_time dummy
+scoreboard objectives add uws.shadow_step_active_time dummy
 scoreboard objectives add uws.smelting.mined_iron minecraft.mined:minecraft.iron_ore
 scoreboard objectives add uws.smelting.mined_deepslate_iron minecraft.mined:minecraft.deepslate_iron_ore
 scoreboard objectives add uws.smelting.mined_gold minecraft.mined:minecraft.gold_ore
@@ -34,7 +35,7 @@ scoreboard players set #2 uws.state 2
 function uws:libraries/internal/lang/initialize/en_us
 function uws:libraries/internal/lang/initialize/zh_cn
 function uws:libraries/internal/lang/score/get_default
-function uws:libraries/internal/option/loop
+function uws:libraries/internal/loop/main
 
 gamerule maxCommandChainLength 2147483647
 

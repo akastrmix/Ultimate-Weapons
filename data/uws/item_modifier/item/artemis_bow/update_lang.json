@@ -21,16 +21,32 @@
         "color": "gray",
         "italic": false
       },
-      {
-        "storage": "uws:lang",
-        "nbt": "en_us.\"item_lore.artemis_bow.line3\"",
-        "interpret": true,
-        "color": "gray",
-        "italic": false
-      }
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.artemis_bow.line3.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.artemis_bow.line3.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "en_us.\"item_lore.artemis_bow.line3.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ]
     ],
     "mode": "replace_section",
-    "offset": 2,
+    "offset": 1,
     "size": 3,
     "conditions": [
       {
@@ -43,16 +59,39 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.artemis_bow.line1.part1\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.artemis_bow.line1.part2\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "zh_cn.\"item_lore.artemis_bow.line1.part3\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
       {
         "storage": "uws:lang",
-        "nbt": "zh_cn.\"item_lore.artemis_bow\"",
+        "nbt": "zh_cn.\"item_lore.artemis_bow.line2\"",
         "interpret": true,
         "color": "gray",
         "italic": false
       }
     ],
     "mode": "replace_section",
-    "offset": 2,
+    "offset": 1,
     "size": 3,
     "conditions": [
       {
