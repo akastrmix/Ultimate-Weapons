@@ -1,0 +1,1 @@
+playsound minecraft:entity.generic.explode block @a

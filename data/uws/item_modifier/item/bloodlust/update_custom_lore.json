@@ -116,6 +116,61 @@
             "name": "uws:is_lang_zh_cn"
           }
         ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          {
+            "text": ""
+          },
+          [
+            {
+              "storage": "uws:lang",
+              "nbt": "ct_hk.\"item_lore.bloodlust.section2.line1\"",
+              "interpret": true,
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "+0🗡",
+              "color": "green",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "storage": "uws:lang",
+              "nbt": "ct_hk.\"item_lore.bloodlust.section2.line2.part1\"",
+              "interpret": true,
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "0",
+              "color": "aqua",
+              "italic": false
+            },
+            {
+              "text": "/",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": "100",
+              "color": "green",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_section",
+        "offset": 3,
+        "conditions": [
+          {
+            "condition": "minecraft:reference",
+            "name": "uws:is_lang_ct_hk"
+          }
+        ]
       }
     ]
   },
@@ -447,6 +502,175 @@
               {
                 "condition": "minecraft:reference",
                 "name": "uws:is_lang_zh_cn"
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uws_effects:{edging:{current_tier:5}}}"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          {
+            "text": ""
+          },
+          [
+            {
+              "storage": "uws:lang",
+              "nbt": "ct_hk.\"item_lore.bloodlust.section2.line1\"",
+              "interpret": true,
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "+",
+              "color": "green",
+              "italic": false
+            },
+            {
+              "entity": "@s",
+              "nbt": "SelectedItem.components.minecraft:custom_data.uws_effects.edging.sharpness_bonus",
+              "color": "green",
+              "italic": false
+            },
+            {
+              "text": "🗡",
+              "color": "green",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_section",
+        "offset": 3,
+        "conditions": [
+          {
+            "condition": "minecraft:reference",
+            "name": "uws:is_lang_ct_hk"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "storage": "uws:lang",
+              "nbt": "ct_hk.\"item_lore.bloodlust.section2.line2.part1\"",
+              "interpret": true,
+              "color": "white",
+              "italic": false
+            },
+            {
+              "entity": "@s",
+              "nbt": "SelectedItem.components.minecraft:custom_data.uws_effects.edging.kill_count",
+              "color": "aqua",
+              "italic": false
+            },
+            {
+              "text": "/",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "entity": "@s",
+              "nbt": "SelectedItem.components.minecraft:custom_data.uws_effects.edging.next_tier_requirement",
+              "color": "green",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_section",
+        "offset": 5,
+        "conditions": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:reference",
+                "name": "uws:is_lang_ct_hk"
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "mainhand": {
+                        "predicates": {
+                          "minecraft:custom_data": "{uws_effects:{edging:{current_tier:5}}}"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "storage": "uws:lang",
+              "nbt": "ct_hk.\"item_lore.bloodlust.section2.line2.part1\"",
+              "interpret": true,
+              "color": "white",
+              "italic": false
+            },
+            {
+              "entity": "@s",
+              "nbt": "SelectedItem.components.minecraft:custom_data.uws_effects.edging.kill_count",
+              "color": "aqua",
+              "italic": false
+            },
+            {
+              "text": "/",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "entity": "@s",
+              "nbt": "SelectedItem.components.minecraft:custom_data.uws_effects.edging.next_tier_requirement",
+              "color": "green",
+              "italic": false
+            },
+            {
+              "storage": "uws:lang",
+              "nbt": "ct_hk.\"item_lore.bloodlust.section2.line2.part2\"",
+              "interpret": true,
+              "color": "yellow",
+              "bold": true,
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_section",
+        "offset": 5,
+        "conditions": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:reference",
+                "name": "uws:is_lang_ct_hk"
               },
               {
                 "condition": "minecraft:entity_properties",

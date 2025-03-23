@@ -27,36 +27,8 @@
               ],
               "conditions": [
                 {
-                  "condition": "minecraft:all_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:inverted",
-                      "term": {
-                        "condition": "minecraft:value_check",
-                        "value": {
-                          "type": "minecraft:score",
-                          "target": {
-                            "type": "minecraft:fixed",
-                            "name": "#uws_general"
-                          },
-                          "score": "uws.smelting_time"
-                        },
-                        "range": 1
-                      }
-                    },
-                    {
-                      "condition": "minecraft:match_tool",
-                      "predicate": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "uws:smelting"
-                            }
-                          ]
-                        }
-                      }
-                    }
-                  ]
+                  "condition": "minecraft:reference",
+                  "name": "uws:effects/smelting/is_correct_tool"
                 }
               ]
             },

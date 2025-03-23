@@ -74,5 +74,34 @@
         "name": "uws:is_lang_zh_cn"
       }
     ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "storage": "uws:lang",
+        "nbt": "ct_hk.\"item_lore.voidbox.line1\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "ct_hk.\"item_lore.voidbox.line2\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 4,
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_ct_hk"
+      }
+    ]
   }
 ]

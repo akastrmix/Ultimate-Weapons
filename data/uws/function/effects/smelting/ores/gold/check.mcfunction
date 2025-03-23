@@ -1,3 +1,0 @@
-scoreboard players set #temp uws.state 0
-$execute as @e[type=minecraft:item,nbt={Age:0s},distance=..$(distance)] if items entity @s contents minecraft:raw_gold[custom_data~{uws_item:{type:smelting_temp_gold}}] if function uws:effects/smelting/check_cooldown at @s align xyz positioned ~0.5 ~0.5 ~0.5 run function uws:effects/smelting/ores/gold/smelt
-execute if score #temp uws.state matches 1 run function uws:effects/smelting/apply_cooldown

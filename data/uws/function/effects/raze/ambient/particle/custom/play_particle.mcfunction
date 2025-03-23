@@ -1,0 +1,1 @@
+$particle $(id) ~ ~ ~ $(spread) $(spread) $(spread) $(speed) $(count) force

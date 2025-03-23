@@ -1,0 +1,1 @@
+$execute as @e[type=minecraft:item,nbt={Age:0s},distance=..$(distance)] if items entity @s contents minecraft:stick[custom_data~{uws_item:{type:replenish_temp_nether_wart}}] at @s run function uws:effects/replenish/crops/nether_wart/replant

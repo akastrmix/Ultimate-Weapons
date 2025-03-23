@@ -50,7 +50,7 @@ data modify storage uws:lang zh_cn."item_lore.golden_head.line1.part2" set value
 data modify storage uws:lang zh_cn."item_lore.golden_head.line2" set value {"text":"(2:00) 和迅捷I (0:10)"}
 data modify storage uws:lang zh_cn."item_lore.golden_head.line3" set value {"text":"1秒冷却时间"}
 
-data modify storage uws:lang zh_cn."item_lore.smelter_pickaxe" set value {"text":"一把能自动冶炼矿物的镐子"}
+data modify storage uws:lang zh_cn."item_lore.smelter_pickaxe" set value {"text":"自动将破坏的矿石冶炼为烧制后的产物"}
 
 data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part1" set value {"text":"右键点击"}
 data modify storage uws:lang zh_cn."item_lore.shadow_blade.line1.part2" set value {"text":"获得 "}
@@ -64,6 +64,14 @@ data modify storage uws:lang zh_cn."item_lore.shadow_blade.line2" set value {"te
 data modify storage uws:lang zh_cn."item_lore.shadow_blade.line3" set value {"text":"将取消"}
 data modify storage uws:lang zh_cn."item_lore.shadow_blade.line4" set value {"text":"30秒冷却时间"}
 
+data modify storage uws:lang zh_cn."item_lore.cultivator_hoe.line1" set value {"text":"破坏农作物或地狱疣时，自动使用背包中"}
+data modify storage uws:lang zh_cn."item_lore.cultivator_hoe.line2" set value {"text":"的材料进行补种"}
+
+data modify storage uws:lang zh_cn."item_lore.war_pick.line1.part1" set value {"text":"挖掘"}
+data modify storage uws:lang zh_cn."item_lore.war_pick.line1.part2" set value {"text":"特定自然方块后产生大型爆炸，并"}
+data modify storage uws:lang zh_cn."item_lore.war_pick.line2" set value {"text":"摧毁周围 3×3×3 区域内的相似方块"}
+data modify storage uws:lang zh_cn."item_lore.war_pick.line3" set value {"text":"2秒冷却时间"}
+
 # text message
 data modify storage uws:lang zh_cn."text.datapack_unloaded" set value {"text":"Ultimate Weapons: 数据包已卸载"}
 data modify storage uws:lang zh_cn."text.uws_help" set value {"text":"UWS帮助列表"}
@@ -73,12 +81,13 @@ data modify storage uws:lang zh_cn."text.cooldowns_reset" set value {"text":"所
 data modify storage uws:lang zh_cn."text.uws_options" set value {"text":"UWS选项"}
 data modify storage uws:lang zh_cn."text.uws_options.content1" set value {"text":"设置你的偏好语言为英语"}
 data modify storage uws:lang zh_cn."text.uws_options.content2" set value {"text":"设置你的偏好语言为简体中文"}
-data modify storage uws:lang zh_cn."text.uws_options.content3" set value {"text":"切换武器冷却时间提示"}
-data modify storage uws:lang zh_cn."text.uws_options.content4" set value {"text":"切换护甲冷却时间提示"}
-data modify storage uws:lang zh_cn."text.uws_options.content5" set value {"text":"切换武器冷却就绪通知 (仅适用大于1秒的CD)"}
-data modify storage uws:lang zh_cn."text.uws_options.content6" set value {"text":"切换死神镰刀使用提示"}
-data modify storage uws:lang zh_cn."text.uws_options.content7" set value {"text":"切换虚空箱使用提示"}
-data modify storage uws:lang zh_cn."text.uws_options.content8" set value {"text":"切换金头使用提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content3" set value {"text":"设置你的偏好语言为繁体中文（香港）"}
+data modify storage uws:lang zh_cn."text.uws_options.content4" set value {"text":"切换武器冷却时间提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content5" set value {"text":"切换护甲冷却时间提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content6" set value {"text":"切换武器冷却就绪通知 (仅适用大于1秒的CD)"}
+data modify storage uws:lang zh_cn."text.uws_options.content7" set value {"text":"切换死神镰刀使用提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content8" set value {"text":"切换虚空箱使用提示"}
+data modify storage uws:lang zh_cn."text.uws_options.content9" set value {"text":"切换金头使用提示"}
 data modify storage uws:lang zh_cn."text.feature_unavailable" set value {"text":"此功能暂不可用"}
 
 data modify storage uws:lang zh_cn."text.actionbar_hints_for_weapon_selected" set value {"text":"武器冷却时间提示显示位置已更改为动作栏"}
@@ -100,6 +109,7 @@ data modify storage uws:lang zh_cn."text.ghead_hints_disabled" set value {"text"
 
 data modify storage uws:lang zh_cn."text.default_lang_set_to_english" set value {"text":"Ultimate Weapons: 默认语言已更改为英语"}
 data modify storage uws:lang zh_cn."text.default_lang_set_to_chinese" set value {"text":"Ultimate Weapons: 默认语言已更改为简体中文"}
+data modify storage uws:lang zh_cn."text.default_lang_set_to_cantonese" set value {"text":"Ultimate Weapons: 默认语言已更改为繁体中文（香港）"}
 data modify storage uws:lang zh_cn."text.preferred_lang_reset" set value {"text":"你的偏好语言已重置"}
 data modify storage uws:lang zh_cn."text.preferred_lang_unset" set value {"text":"你的偏好语言还未设置"}
 

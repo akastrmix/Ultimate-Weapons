@@ -1,6 +1,6 @@
 $scoreboard players set @s uws.shadow_step_active_time $(duration)
 
-$data modify storage uws:temp player.deactivate_condition set value $(deactivate_condition)
+$data modify storage uws:temp player.deactivate_conditions set value $(deactivate_conditions)
 $data modify storage uws:temp player.sound_event_deactivate set value "$(sound_event_deactivate)"
 $data modify storage uws:temp player.sound_pitch_deactivate set value "$(sound_pitch_deactivate)"
 $data modify storage uws:temp player.use_cooldown set value $(use_cooldown)

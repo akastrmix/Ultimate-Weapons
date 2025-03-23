@@ -18,5 +18,15 @@
         "name": "uws:is_lang_zh_cn"
       }
     ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{uws_item:{lang:ct_hk}}",
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_ct_hk"
+      }
+    ]
   }
 ]

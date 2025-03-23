@@ -1,2 +1,2 @@
-execute unless score #uws_general uws.lang matches 1..2 run function uws:libraries/internal/lang/score/get_default
-execute unless score @s uws.lang matches 0..2 run function uws:libraries/internal/lang/score/get_own
+execute unless score #uws_general uws.lang matches 1..3 run function uws:libraries/internal/lang/score/get_default
+execute unless score @s uws.lang matches 0..3 run function uws:libraries/internal/lang/score/get_own

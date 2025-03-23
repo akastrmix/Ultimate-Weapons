@@ -62,6 +62,35 @@
     ]
   },
   {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "storage": "uws:lang",
+        "nbt": "ct_hk.\"item_lore.bloodlust.section1.line1\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "ct_hk.\"item_lore.bloodlust.section1.line2\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 2,
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_ct_hk"
+      }
+    ]
+  },
+  {
     "function": "reference",
     "name": "uws:item/bloodlust/update_custom_lore"
   }

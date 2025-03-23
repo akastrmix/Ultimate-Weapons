@@ -192,5 +192,99 @@
         "name": "uws:is_lang_zh_cn"
       }
     ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "storage": "uws:lang",
+          "nbt": "ct_hk.\"item_lore.shadow_blade.line1.part1\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "ct_hk.\"item_lore.shadow_blade.line1.part2\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "ct_hk.\"item_lore.shadow_blade.line1.part3\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "ct_hk.\"item_lore.shadow_blade.line1.part4\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "ct_hk.\"item_lore.shadow_blade.line1.part5\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "ct_hk.\"item_lore.shadow_blade.line1.part6\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "ct_hk.\"item_lore.shadow_blade.line1.part7\"",
+          "interpret": true,
+          "color": "white",
+          "italic": false
+        },
+        {
+          "storage": "uws:lang",
+          "nbt": "ct_hk.\"item_lore.shadow_blade.line1.part8\"",
+          "interpret": true,
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      {
+        "storage": "uws:lang",
+        "nbt": "ct_hk.\"item_lore.shadow_blade.line2\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "ct_hk.\"item_lore.shadow_blade.line3\"",
+        "interpret": true,
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "uws:lang",
+        "nbt": "ct_hk.\"item_lore.shadow_blade.line4\"",
+        "interpret": true,
+        "color": "dark_gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 5,
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "uws:is_lang_ct_hk"
+      }
+    ]
   }
 ]

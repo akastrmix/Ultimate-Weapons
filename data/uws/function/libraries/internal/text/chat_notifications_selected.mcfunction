@@ -1,2 +1,3 @@
 execute if predicate uws:is_lang_en_us run return run tellraw @s {"storage":"uws:lang","nbt":"en_us.\"text.chat_notifications_selected\"","interpret":true,"color":"green"}
 execute if predicate uws:is_lang_zh_cn run return run tellraw @s {"storage":"uws:lang","nbt":"zh_cn.\"text.chat_notifications_selected\"","interpret":true,"color":"green"}
+execute if predicate uws:is_lang_ct_hk run return run tellraw @s {"storage":"uws:lang","nbt":"ct_hk.\"text.chat_notifications_selected\"","interpret":true,"color":"green"}

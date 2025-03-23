@@ -16,6 +16,14 @@
   "effects": {
     "minecraft:hit_block": [
       {
+        "requirements": {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "blocks": "#uws:smelting_valid_blocks"
+            }
+          }
+        },
         "effect": {
           "type": "minecraft:run_function",
           "function": "uws:effects/smelting/initiate_loop"

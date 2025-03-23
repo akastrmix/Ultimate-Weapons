@@ -66,6 +66,31 @@
               }
             }
           ]
+        },
+        {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:reference",
+              "name": "uws:is_lang_ct_hk"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "head": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uws_item:{lang:ct_hk}}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
         }
       ]
     }

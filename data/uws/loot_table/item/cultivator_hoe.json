@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{uws_item:{type:cultivator_hoe},uws_effects:{replenish:{}}}",
+                "minecraft:enchantments": {
+                  "levels": {
+                    "uws:replenish": 1
+                  }
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "minecraft:base_attack_damage",
+                      "amount": 0,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "minecraft:base_attack_speed",
+                      "amount": 16,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ]
+                },
+                "minecraft:item_name": "{\"text\":\"Cultivator's Hoe\",\"color\":\"white\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "uws:item/cultivator_hoe/update_lang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

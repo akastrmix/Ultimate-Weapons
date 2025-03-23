@@ -38,9 +38,9 @@ data modify storage uws:lang en_us."item_lore.bloodlust.section2.line1" set valu
 data modify storage uws:lang en_us."item_lore.bloodlust.section2.line2.part1" set value {"text":"Progress: "}
 data modify storage uws:lang en_us."item_lore.bloodlust.section2.line2.part2" set value {"text":" (MAX)"}
 
-data modify storage uws:lang en_us."item_lore.world_breaker.line1" set value {"text":"Instantly destroys blocks that are"}
-data modify storage uws:lang en_us."item_lore.world_breaker.line2" set value {"text":"unbreakable or take a long time to"}
-data modify storage uws:lang en_us."item_lore.world_breaker.line3" set value {"text":"mine"}
+data modify storage uws:lang en_us."item_lore.world_breaker.line1" set value {"text":"Insta-destroys blocks that are"}
+data modify storage uws:lang en_us."item_lore.world_breaker.line2" set value {"text":"unbreakable or take a long time"}
+data modify storage uws:lang en_us."item_lore.world_breaker.line3" set value {"text":"to mine"}
 data modify storage uws:lang en_us."item_lore.world_breaker.line4" set value {"text":"1s Cooldown"}
 
 data modify storage uws:lang en_us."item_lore.artemis_bow.line1" set value {"text":"Arrows fired from this weapon"}
@@ -60,8 +60,8 @@ data modify storage uws:lang en_us."item_lore.golden_head.line2" set value {"tex
 data modify storage uws:lang en_us."item_lore.golden_head.line3" set value {"text":"Speed I (0:10)"}
 data modify storage uws:lang en_us."item_lore.golden_head.line4" set value {"text":"1s Cooldown"}
 
-data modify storage uws:lang en_us."item_lore.smelter_pickaxe.line1" set value {"text":"A pickaxe that smelts ores"}
-data modify storage uws:lang en_us."item_lore.smelter_pickaxe.line2" set value {"text":"automatically"}
+data modify storage uws:lang en_us."item_lore.smelter_pickaxe.line1" set value {"text":"Automatically smelts broken ores"}
+data modify storage uws:lang en_us."item_lore.smelter_pickaxe.line2" set value {"text":"into their smelted form"}
 
 data modify storage uws:lang en_us."item_lore.shadow_blade.line1.part1" set value {"text":"RIGHT CLICK"}
 data modify storage uws:lang en_us."item_lore.shadow_blade.line1.part2" set value {"text":" to gain "}
@@ -75,6 +75,16 @@ data modify storage uws:lang en_us."item_lore.shadow_blade.line3" set value {"te
 data modify storage uws:lang en_us."item_lore.shadow_blade.line4" set value {"text":"hit other mob"}
 data modify storage uws:lang en_us."item_lore.shadow_blade.line5" set value {"text":"30s Cooldown"}
 
+data modify storage uws:lang en_us."item_lore.cultivator_hoe.line1" set value {"text":"Upon breaking crops or nether wart,"}
+data modify storage uws:lang en_us."item_lore.cultivator_hoe.line2" set value {"text":"automatically replant from materials"}
+data modify storage uws:lang en_us."item_lore.cultivator_hoe.line3" set value {"text":"in your inventory"}
+
+data modify storage uws:lang en_us."item_lore.war_pick.line1.part1" set value {"text":"MINE"}
+data modify storage uws:lang en_us."item_lore.war_pick.line1.part2" set value {"text":" a certain natural block to trigger"}
+data modify storage uws:lang en_us."item_lore.war_pick.line2" set value {"text":"a large explosion that destroys similar"}
+data modify storage uws:lang en_us."item_lore.war_pick.line3" set value {"text":"blocks in a 3×3×3 area"}
+data modify storage uws:lang en_us."item_lore.war_pick.line4" set value {"text":"2s Cooldown"}
+
 # text message
 data modify storage uws:lang en_us."text.datapack_unloaded" set value {"text":"Ultimate Weapons: Datapack has been unloaded"}
 data modify storage uws:lang en_us."text.uws_help" set value {"text":"UWS Help"}
@@ -84,12 +94,13 @@ data modify storage uws:lang en_us."text.cooldowns_reset" set value {"text":"All
 data modify storage uws:lang en_us."text.uws_options" set value {"text":"UWS Options"}
 data modify storage uws:lang en_us."text.uws_options.content1" set value {"text":"Set your preferred language to English"}
 data modify storage uws:lang en_us."text.uws_options.content2" set value {"text":"Set your preferred language to Simplified Chinese"}
-data modify storage uws:lang en_us."text.uws_options.content3" set value {"text":"Switch weapon cooldown hints"}
-data modify storage uws:lang en_us."text.uws_options.content4" set value {"text":"Switch armor cooldown hints"}
-data modify storage uws:lang en_us."text.uws_options.content5" set value {"text":"Switch weapon cooldown ready notifications (only for CD longer than 1 second)"}
-data modify storage uws:lang en_us."text.uws_options.content6" set value {"text":"Toggle hints for using Death's Scythe"}
-data modify storage uws:lang en_us."text.uws_options.content7" set value {"text":"Toggle hints for using Voidbox"}
-data modify storage uws:lang en_us."text.uws_options.content8" set value {"text":"Toggle hints for using Golden Head"}
+data modify storage uws:lang en_us."text.uws_options.content3" set value {"text":"Set your preferred language to Cantonese (Hong Kong)"}
+data modify storage uws:lang en_us."text.uws_options.content4" set value {"text":"Switch weapon cooldown hints"}
+data modify storage uws:lang en_us."text.uws_options.content5" set value {"text":"Switch armor cooldown hints"}
+data modify storage uws:lang en_us."text.uws_options.content6" set value {"text":"Switch weapon cooldown ready notifications (only for CD longer than 1 second)"}
+data modify storage uws:lang en_us."text.uws_options.content7" set value {"text":"Toggle hints for using Death's Scythe"}
+data modify storage uws:lang en_us."text.uws_options.content8" set value {"text":"Toggle hints for using Voidbox"}
+data modify storage uws:lang en_us."text.uws_options.content9" set value {"text":"Toggle hints for using Golden Head"}
 data modify storage uws:lang en_us."text.feature_unavailable" set value {"text":"This feature is temporarily unavailable"}
 
 data modify storage uws:lang en_us."text.actionbar_hints_for_weapon_selected" set value {"text":"Cooldown hints for weapons are now displayed in the actionbar"}
@@ -111,6 +122,7 @@ data modify storage uws:lang en_us."text.ghead_hints_disabled" set value {"text"
 
 data modify storage uws:lang en_us."text.default_lang_set_to_english" set value {"text":"Ultimate Weapons: Default language has been set to English"}
 data modify storage uws:lang en_us."text.default_lang_set_to_chinese" set value {"text":"Ultimate Weapons: Default language has been set to Simplified Chinese"}
+data modify storage uws:lang en_us."text.default_lang_set_to_cantonese" set value {"text":"Ultimate Weapons: Default language has been set to Cantonese (Hong Kong)"}
 data modify storage uws:lang en_us."text.preferred_lang_reset" set value {"text":"Your preferred language has been reset"}
 data modify storage uws:lang en_us."text.preferred_lang_unset" set value {"text":"Your preferred language has not been set yet"}
 
