@@ -8,7 +8,7 @@ To obtain an UWS item, simply run this command:
 ```mcfunction
 /function uws:get_item/<item_name>
 ```
-Currently, there are 12 available items, and more unique ones will be coming in future updates. All items are now only obtainable through commands, so as to give server admins full control over how items are distributed and utilized, allowing them to adapt items to gameplay without directly affecting mechanics through predefined recipes.
+Currently, there are 14 available items, and more unique ones will be coming in future updates. All items are now only obtainable through commands, so as to give server admins full control over how items are distributed and utilized, allowing them to adapt items to gameplay without directly affecting mechanics through predefined recipes.
 
 For the documentation of all UWS items, visit [this page](https://github.com/akastrmix/Ultimate-Weapons/wiki/Items).
 <br><br>
@@ -19,7 +19,7 @@ To customize an UWS item / effect, first use this command:
 ```mcfunction
 /function uws:get_item_config/<item_name>
 ```
-This will give you two command blocks with name `<item_name> Template` and `<item_name> Modifier`. The `<item_name> Template` block is responsible for giving you an UWS item whose effects can be altered by changing its field values, while the `<item_name> Modifier` lets you modify the effects of your held item.
+This will give you two command blocks with name `<item_name> Template` and `<item_name> Modifier`. The `<item_name> Template` block is responsible for giving you an UWS item whilst allowing you to alter its effects by changing its field values, while the `<item_name> Modifier` lets you modify the effects of your held item.
 <br><br>
 - **In Template block:** Inside this block, look for this data:
 ```
@@ -75,13 +75,14 @@ Add `set <number>` at the end of the command to target a specific option.
 ## Notes
 - Ultimate Weapons requires a persistent entity and a forceloaded chunk to function properly. Please avoid killing all entities (use `/kill @e[tag=!uws.persistent]` instead) or removing all forceloaded chunks in the overworld.
 - Ultimate Weapons overrides vanilla loot tables to implement some advanced features, so it's advisable to ensure there are no conflicts with other packs.
-- If you need to uninstall the datapack, you can use `/function uws:unload` to remove all traces left by it.
+- If you need to uninstall the datapack, you can use `/function uws:unload` to remove all traces left by it (player database not included).
 <br>
 
 ## Supported languages
 Ultimate Weapons supports the following languages (covering text messages and UWS item lores):
 - English (default)
 - Simplified Chinese
+- Cantonese (Hong Kong)
 
 To switch between them, use the following commands:
 
@@ -96,3 +97,6 @@ To switch between them, use the following commands:
 <br>
 
 **The language for item lores may not update immediately after switching.*
+<br><br>
+## Credits
+Thanks to **RTX3060Ti1604** (bilibili account: https://space.bilibili.com/518037264) for providing the Cantonese (Hong Kong) translation.
