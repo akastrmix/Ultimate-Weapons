@@ -5,6 +5,7 @@ scoreboard objectives add uws_options trigger
 scoreboard objectives add uws.leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add uws.state dummy
 scoreboard objectives add uws.lang dummy
+scoreboard objectives add uws.ready_notify_threshold dummy
 scoreboard objectives add uws.schedule_id dummy
 scoreboard objectives add uws.anchor_id dummy
 scoreboard objectives add uws.hint_time dummy
@@ -74,7 +75,7 @@ scoreboard objectives add uws.raze.mined_stone minecraft.mined:minecraft.stone
 scoreboard objectives add uws.raze.mined_tuff minecraft.mined:minecraft.tuff
 scoreboard objectives add uws.raze.mined_warped_nylium minecraft.mined:minecraft.warped_nylium
 
-scoreboard players set #2 uws.state 2
+scoreboard players set #number_-1 uws.state -1
 
 function uws:libraries/internal/lang/initialize/en_us
 function uws:libraries/internal/lang/initialize/zh_cn

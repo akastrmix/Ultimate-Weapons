@@ -1,4 +1,5 @@
 $execute store result score @s uws.edging_time run scoreboard players add #temp_gametime uws.state $(use_cooldown)
+$scoreboard players set #temp_cooldown uws.state $(use_cooldown)
 
 $execute if score #temp_kill_count uws.state matches $(tier1_requirement).. store result storage uws:temp item_data.current_tier int 1 run scoreboard players set #temp_current_tier uws.state 1
 $execute if score #temp_kill_count uws.state matches $(tier2_requirement).. store result storage uws:temp item_data.current_tier int 1 run scoreboard players set #temp_current_tier uws.state 2

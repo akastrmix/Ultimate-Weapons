@@ -11,9 +11,12 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": "{uws_item:{type:exodus},uws_effects:{eternity:{}}}",
-                "minecraft:item_name": "{\"text\":\"Exodus\",\"color\":\"gold\"}",
+                "minecraft:item_name": {
+                  "text": "Exodus",
+                  "color": "gold"
+                },
                 "minecraft:lore": [
-                  "{\"text\":\"\"}"
+                  ""
                 ]
               }
             },

@@ -28,9 +28,12 @@
                   "seconds": 1,
                   "cooldown_group": "uws:golden_head"
                 },
-                "minecraft:item_name": "{\"text\":\"Golden Head\",\"color\":\"gold\"}",
+                "minecraft:item_name": {
+                  "text": "Golden Head",
+                  "color": "gold"
+                },
                 "minecraft:lore": [
-                  "{\"text\":\"\"}"
+                  ""
                 ]
               }
             },

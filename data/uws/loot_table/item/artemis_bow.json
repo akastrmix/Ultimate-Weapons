@@ -12,13 +12,14 @@
               "components": {
                 "minecraft:custom_data": "{uws_item:{type:artemis_bow},uws_effects:{homing:{}}}",
                 "minecraft:enchantments": {
-                  "levels": {
-                    "uws:homing": 1
-                  }
+                  "uws:homing": 1
                 },
-                "minecraft:item_name": "{\"text\":\"Artemis' Bow\",\"color\":\"red\"}",
+                "minecraft:item_name": {
+                  "text": "Artemis' Bow",
+                  "color": "red"
+                },
                 "minecraft:lore": [
-                  "{\"text\":\"\"}"
+                  ""
                 ]
               }
             },

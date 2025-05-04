@@ -1,2 +1,1 @@
-execute unless entity @e[type=minecraft:lightning_bolt,limit=1,distance=..10] run item modify entity @s armor.head {"function":"minecraft:set_enchantments","enchantments":{"uws:lightning_immunity":0}}
-execute unless entity @e[type=minecraft:lightning_bolt,limit=1,distance=..10] if items entity @s armor.head minecraft:stone_button run item replace entity @s armor.head with minecraft:air
+execute unless entity @e[type=minecraft:lightning_bolt,limit=1,distance=..10] run item replace entity @s saddle with minecraft:air

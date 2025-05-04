@@ -12,31 +12,30 @@
               "components": {
                 "minecraft:custom_data": "{uws_item:{type:smelter_pickaxe},uws_effects:{smelting:{}}}",
                 "minecraft:enchantments": {
-                  "levels": {
-                    "uws:smelting": 1
+                  "uws:smelting": 1
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:base_attack_damage",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "minecraft:base_attack_speed",
+                    "amount": 16,
+                    "operation": "add_value",
+                    "slot": "mainhand"
                   }
+                ],
+                "minecraft:item_name": {
+                  "text": "Smelter's Pickaxe",
+                  "color": "white"
                 },
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "type": "minecraft:attack_damage",
-                      "id": "minecraft:base_attack_damage",
-                      "amount": 3,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "type": "minecraft:attack_speed",
-                      "id": "minecraft:base_attack_speed",
-                      "amount": 16,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    }
-                  ]
-                },
-                "minecraft:item_name": "{\"text\":\"Smelter's Pickaxe\",\"color\":\"white\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"\"}"
+                  ""
                 ]
               }
             },

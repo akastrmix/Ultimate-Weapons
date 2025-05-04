@@ -1,4 +1,5 @@
 execute store result score @s uws.edging_time run scoreboard players add #temp_gametime uws.state 1
+scoreboard players set #temp_cooldown uws.state 1
 
 execute if score #temp_kill_count uws.state matches 100..249 store result storage uws:temp item_data.current_tier int 1 run scoreboard players set #temp_current_tier uws.state 1
 execute if score #temp_kill_count uws.state matches 250..499 store result storage uws:temp item_data.current_tier int 1 run scoreboard players set #temp_current_tier uws.state 2

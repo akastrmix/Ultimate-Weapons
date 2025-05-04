@@ -11,4 +11,5 @@ execute if score #temp_option uws.state matches 7 run return run function uws:li
 execute if score #temp_option uws.state matches 8 run return run function uws:libraries/internal/option/functions/toggle_scythe_hints
 execute if score #temp_option uws.state matches 9 run return run function uws:libraries/internal/option/functions/toggle_voidbox_hints
 execute if score #temp_option uws.state matches 10 run return run function uws:libraries/internal/option/functions/toggle_ghead_hints
+execute if score #temp_option uws.state matches -200..-1 run return run function uws:libraries/internal/option/functions/adjust_weapon_cooldown_ready_notifications_threshold
 function uws:libraries/internal/text/uws_options

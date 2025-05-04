@@ -12,31 +12,30 @@
               "components": {
                 "minecraft:custom_data": "{uws_item:{type:death_scythe},uws_effects:{lifesteal:{}}}",
                 "minecraft:enchantments": {
-                  "levels": {
-                    "uws:lifesteal": 1
+                  "uws:lifesteal": 1
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:base_attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "minecraft:base_attack_speed",
+                    "amount": 16,
+                    "operation": "add_value",
+                    "slot": "mainhand"
                   }
+                ],
+                "minecraft:item_name": {
+                  "text": "Death's Scythe",
+                  "color": "light_purple"
                 },
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "type": "minecraft:attack_damage",
-                      "id": "minecraft:base_attack_damage",
-                      "amount": 0,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "type": "minecraft:attack_speed",
-                      "id": "minecraft:base_attack_speed",
-                      "amount": 16,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    }
-                  ]
-                },
-                "minecraft:item_name": "{\"text\":\"Death's Scythe\",\"color\":\"light_purple\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"\"}"
+                  ""
                 ]
               }
             },

@@ -1,0 +1,3 @@
+data remove storage uws:temp player
+data modify storage uws:temp player set from entity @s SelectedItem.components.minecraft:custom_data
+execute if data storage uws:temp {player:{uws_effects:{}}} run tellraw @s [{text:"type= ",color:"yellow"},{storage:"uws:temp",nbt:"player.uws_item.type",color:"aqua"},{text:"\nlang= ",color:"yellow"},{storage:"uws:temp",nbt:"player.uws_item.lang",color:"aqua"},{text:"\neffects_data= ",color:"yellow"},{storage:"uws:temp",nbt:"player.uws_effects",color:"aqua"}]

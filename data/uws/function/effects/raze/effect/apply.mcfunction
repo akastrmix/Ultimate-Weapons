@@ -2,34 +2,13 @@ item modify entity @s contents {"function":"minecraft:set_components","component
 
 execute if score #temp_cooldown_status uws.state matches 1 run return fail
 
-execute positioned ~1 ~1 ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~1 ~1 ~ if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~1 ~1 ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~ ~1 ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~ ~1 ~ if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~ ~1 ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~1 ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~1 ~ if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
+execute positioned ~ ~1 ~ run function uws:effects/raze/effect/place_layer
+execute positioned ~ ~ ~ run function uws:effects/raze/effect/place_layer
+execute positioned ~ ~-1 ~ run function uws:effects/raze/effect/place_layer
 
-execute positioned ~1 ~ ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~1 ~ ~ if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~1 ~ ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~ ~ ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~ ~ ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~ ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~ ~ if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~ ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-
-execute positioned ~1 ~-1 ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~1 ~-1 ~ if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~1 ~-1 ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~ ~-1 ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~ ~-1 ~ if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~ ~-1 ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~-1 ~ if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy
+execute store result score #temp uws.state run function uws:effects/raze/effect/attempt_break/custom with storage uws:temp item_data
+execute if score #temp uws.state matches 0 run function uws:effects/raze/effect/attempt_break/fallback
+kill @e[type=minecraft:marker,tag=uws.temp,distance=..10]
 
 execute unless data storage uws:temp item_data.particles[0] run function uws:effects/raze/ambient/particle/fallback
 execute if data storage uws:temp item_data.particles[0] run function uws:effects/raze/ambient/particle/custom/loop_particles

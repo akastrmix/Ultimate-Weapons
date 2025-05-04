@@ -11,7 +11,7 @@
               "equipment": {
                 "chest": {
                   "predicates": {
-                    "minecraft:custom_data": "{uws_effects:{resilience:{}}}"
+                    "minecraft:custom_data": "{uws_item:{type:barbarian_chestplate}}"
                   }
                 }
               }
@@ -24,7 +24,7 @@
         ],
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{uws_effects:{resilience:{}}}"
+            "minecraft:custom_data": "{uws_item:{type:barbarian_chestplate}}"
           }
         }
       }

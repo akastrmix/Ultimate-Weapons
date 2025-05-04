@@ -1,0 +1,1 @@
+execute at @e[type=minecraft:marker,tag=uws.temp,distance=..10] if block ~ ~ ~ #uws:raze_valid_blocks run setblock ~ ~ ~ air destroy

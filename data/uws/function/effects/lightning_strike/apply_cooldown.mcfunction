@@ -14,4 +14,6 @@ data modify storage uws:temp item_data set from entity @s SelectedItem.component
 execute store result score #temp uws.state run function uws:effects/lightning_strike/cooldown/custom with storage uws:temp item_data
 execute if score #temp uws.state matches 0 run function uws:effects/lightning_strike/cooldown/fallback
 
+execute unless entity @s[tag=!uws.use_actionbar_ready_notifications,tag=!uws.use_chat_ready_notifications] run function uws:libraries/effect/attempt_ready_notification {effect:"Lightning Strike"}
+
 scoreboard players set @s uws.state 1

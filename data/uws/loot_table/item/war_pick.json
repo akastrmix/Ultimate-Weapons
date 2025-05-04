@@ -12,31 +12,30 @@
               "components": {
                 "minecraft:custom_data": "{uws_item:{type:war_pick},uws_effects:{raze:{}}}",
                 "minecraft:enchantments": {
-                  "levels": {
-                    "uws:raze": 1
+                  "uws:raze": 1
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:base_attack_damage",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "minecraft:base_attack_speed",
+                    "amount": 16,
+                    "operation": "add_value",
+                    "slot": "mainhand"
                   }
+                ],
+                "minecraft:item_name": {
+                  "text": "War Pick",
+                  "color": "gold"
                 },
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "type": "minecraft:attack_damage",
-                      "id": "minecraft:base_attack_damage",
-                      "amount": 4,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "type": "minecraft:attack_speed",
-                      "id": "minecraft:base_attack_speed",
-                      "amount": 16,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    }
-                  ]
-                },
-                "minecraft:item_name": "{\"text\":\"War Pick\",\"color\":\"gold\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"\"}"
+                  ""
                 ]
               }
             },

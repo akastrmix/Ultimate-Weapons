@@ -1,0 +1,1 @@
+$function uws:libraries/schedule/handle_input {with:{command:"function uws:libraries/internal/text/effect_recharged {effect:\"$(effect)\"}",time:$(time)}}

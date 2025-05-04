@@ -17,6 +17,8 @@ execute store result storage uws:temp item_data.current_tier int 1 run scoreboar
 execute store result score #temp uws.state run function uws:effects/edging/effect/custom with entity @s SelectedItem.components.minecraft:custom_data.uws_effects.edging
 execute if score #temp uws.state matches 0 run function uws:effects/edging/effect/fallback
 
+execute unless entity @s[tag=!uws.use_actionbar_ready_notifications,tag=!uws.use_chat_ready_notifications] run function uws:libraries/effect/attempt_ready_notification {effect:Edging}
+
 execute if score #temp_current_tier uws.state matches 0..4 run scoreboard players add #temp_current_tier uws.state 1
 execute store result storage uws:temp item_data.next_tier int 1 run scoreboard players get #temp_current_tier uws.state
 

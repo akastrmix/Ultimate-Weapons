@@ -1,0 +1,9 @@
+summon minecraft:marker ~1 ~ ~1 {Tags:["uws.temp"]}
+summon minecraft:marker ~1 ~ ~ {Tags:["uws.temp"]}
+summon minecraft:marker ~1 ~ ~-1 {Tags:["uws.temp"]}
+summon minecraft:marker ~ ~ ~1 {Tags:["uws.temp"]}
+summon minecraft:marker ~ ~ ~ {Tags:["uws.temp"]}
+summon minecraft:marker ~ ~ ~-1 {Tags:["uws.temp"]}
+summon minecraft:marker ~-1 ~ ~1 {Tags:["uws.temp"]}
+summon minecraft:marker ~-1 ~ ~ {Tags:["uws.temp"]}
+summon minecraft:marker ~-1 ~ ~-1 {Tags:["uws.temp"]}

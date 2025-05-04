@@ -20,6 +20,7 @@ scoreboard objectives remove uws_options
 scoreboard objectives remove uws.leave_game
 scoreboard objectives remove uws.state
 scoreboard objectives remove uws.lang
+scoreboard objectives remove uws.ready_notify_threshold
 scoreboard objectives remove uws.schedule_id
 scoreboard objectives remove uws.anchor_id
 scoreboard objectives remove uws.hint_time

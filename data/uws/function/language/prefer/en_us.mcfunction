@@ -3,4 +3,4 @@ scoreboard players set @s uws.lang 1
 
 function uws:libraries/internal/lang/score/validate
 function uws:libraries/internal/lang/update_item/equipment
-tellraw @s {"text":"Your preferred language has been set to English","color":"green"}
+tellraw @s {text:"Your preferred language has been set to English",color:"green"}

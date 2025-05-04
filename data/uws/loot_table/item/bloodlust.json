@@ -12,31 +12,30 @@
               "components": {
                 "minecraft:custom_data": "{uws_item:{type:bloodlust,use_custom_lore:0b},uws_effects:{edging:{}}}",
                 "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:sharpness": 5
+                  "minecraft:sharpness": 5
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:base_attack_damage",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "minecraft:base_attack_speed",
+                    "amount": 16,
+                    "operation": "add_value",
+                    "slot": "mainhand"
                   }
+                ],
+                "minecraft:item_name": {
+                  "text": "Bloodlust",
+                  "color": "red"
                 },
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "type": "minecraft:attack_damage",
-                      "id": "minecraft:base_attack_damage",
-                      "amount": 6,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "type": "minecraft:attack_speed",
-                      "id": "minecraft:base_attack_speed",
-                      "amount": 16,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    }
-                  ]
-                },
-                "minecraft:item_name": "{\"text\":\"Bloodlust\",\"color\":\"red\"}",
                 "minecraft:lore": [
-                  "{\"text\":\"\"}"
+                  ""
                 ]
               }
             },

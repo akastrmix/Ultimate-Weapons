@@ -16,9 +16,12 @@
                   "sound": "minecraft:intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:item_name": "{\"text\":\"Shadow Blade\",\"color\":\"gold\"}",
+                "minecraft:item_name": {
+                  "text": "Shadow Blade",
+                  "color": "gold"
+                },
                 "minecraft:lore": [
-                  "{\"text\":\"\"}"
+                  ""
                 ]
               }
             },
