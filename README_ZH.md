@@ -1,5 +1,5 @@
 # Ultimate Weapons
-Ultimate Weapons 为 Minecraft 1.21.4+ 带来了众多强大且可高度自定义的物品，灵感来源于主流Minecraft服务器，例如Hypixel。此外，本数据包通过避免tick函数的使用来尽量降低性能影响。
+Ultimate Weapons 为 Minecraft 1.21.4+ 带来了众多强大且可高度自定义的物品，主要灵感来源于主流Minecraft服务器，例如Hypixel。此外，本数据包通过避免tick函数的使用来尽量降低性能影响。
 <br><br>
 ## 开始使用
 ### 获得物品
@@ -18,7 +18,7 @@ UWS物品由可自定义的UWS效果所驱动，这些效果是独立的，即�
 ```mcfunction
 /function uws:get_item_config/<物品名称>
 ```
-此命令将给予你两个命令方块，名字分别为`<物品名称> Template`和`<物品名称> Modifier`。`<物品名称> Template`命令方块负责生成UWS物品并允许你更改其效果，而`<物品名称> Modifier`可以让你修改当前手持物品的效果。
+此命令将给予你两个命令方块，名字分别为`<物品名称> Template`和`<物品名称> Modifier`。`<物品名称> Template`命令方块负责生成UWS物品并允许你修改参数来更改其效果，而`<物品名称> Modifier`可以让你修改当前手持物品的效果。
 <br><br>
 - **Template命令方块：** 在此命令方块中，查找以下数据：
 ```
@@ -46,7 +46,7 @@ UWS物品由可自定义的UWS效果所驱动，这些效果是独立的，即�
 ```
 如果你不确定哪个效果与哪个物品相关联，可以使用此命令来获取当前手持物品的效果信息：
 ```mcfunction
-/data get entity @s SelectedItem.components.minecraft:custom_data.uws_effects
+/function uws:help/lookup_held_item
 ```
 <br>
 
@@ -72,14 +72,14 @@ UWS物品由可自定义的UWS效果所驱动，这些效果是独立的，即�
 在命令末尾添加 `set <数字>` 来触发具体选项。
 <br><br>
 ## 注意事项
-- Ultimate Weapons需要一个永久实体和强制加载区块才能正常运行。请避免清除所有实体（如有需要使用`/kill @e[tag=!uws.persistent]`）或移除所有在主世界的强制加载区块。
-- Ultimate Weapons会覆写某些原战利品表以实现特定功能，因此最好确保这些修改不会与其他数据包发生冲突。
+- Ultimate Weapons 需要一个长期存在的实体和强制加载区块才能正常运行。请避免清除所有实体（如有需要使用`/kill @e[tag=!uws.persistent]`）或移除所有在主世界的强制加载区块。
+- Ultimate Weapons 会覆写某些原版战利品表以实现特定功能，因此建议确保此类修改不会与其他数据包发生冲突。
 - 如果你需要卸载数据包，可以使用`/function uws:unload`来移除所有痕迹和残留数据（不包括玩家数据库）。
 <br>
 
 ## 支持的语言
 此数据包支持以下语言（包含文本消息和UWS物品描述）：
-- English（默认）
+- English
 - 简体中文
 - 繁体中文（香港）
 
@@ -87,15 +87,15 @@ UWS物品由可自定义的UWS效果所驱动，这些效果是独立的，即�
 
 **设置默认语言：**
 ```mcfunction
-/function uws:language/default/<lang>
+/function uws:language/default/<语言>
 ```
 **设置你的偏好语言：**
 ```mcfunction
-/function uws:language/prefer/<lang>
+/function uws:language/prefer/<语言>
 ```
 <br>
 
 **物品描述的语言在切换后可能不会及时更新。*
 <br><br>
 ## 鸣谢
-感谢 **RTX3060Ti1604** (bilibili账号: https://space.bilibili.com/518037264) 为此数据包提供了繁体中文（香港）翻译。
+感谢 **RTX3060Ti1604** (bilibili页面：https://space.bilibili.com/518037264) 为此数据包提供了繁体中文（香港）翻译。
