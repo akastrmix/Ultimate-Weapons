@@ -4,7 +4,9 @@ execute if data entity @s {inGround:1b} run return fail
 
 execute unless entity @s[tag=uws.ineffective] run tag @s add uws.omitted
 execute unless entity @s[tag=uws.ineffective] on origin run tag @s add uws.omitted
-$execute unless entity @s[tag=uws.ineffective] if entity @e[type=!$(ignored_entities),tag=!uws.omitted,distance=..$(tracking_radius)] run function uws:effects/homing/loop/update_tracking/custom with entity @s weapon.components.minecraft:custom_data.uws_effects.homing
+$execute as @a[gamemode=!survival,gamemode=!adventure,distance=..$(tracking_radius)] run tag @s add uws.omitted
+$execute unless entity @s[tag=uws.ineffective] if entity @e[type=!$(ignored_entities),tag=!uws.omitted,gamemode=!creative,gamemode=!spectator,distance=..$(tracking_radius)] run function uws:effects/homing/loop/update_tracking/custom with entity @s weapon.components.minecraft:custom_data.uws_effects.homing
+$execute as @a[gamemode=!survival,gamemode=!adventure,distance=..$(tracking_radius)] run tag @s remove uws.omitted
 execute unless entity @s[tag=uws.ineffective] on origin run tag @s remove uws.omitted
 execute unless entity @s[tag=uws.ineffective] run tag @s remove uws.omitted
 

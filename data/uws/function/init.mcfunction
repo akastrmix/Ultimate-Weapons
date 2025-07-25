@@ -75,11 +75,13 @@ scoreboard objectives add uws.raze.mined_stone minecraft.mined:minecraft.stone
 scoreboard objectives add uws.raze.mined_tuff minecraft.mined:minecraft.tuff
 scoreboard objectives add uws.raze.mined_warped_nylium minecraft.mined:minecraft.warped_nylium
 
+scoreboard players set #number_2 uws.state 2
 scoreboard players set #number_-1 uws.state -1
 
 function uws:libraries/internal/lang/initialize/en_us
 function uws:libraries/internal/lang/initialize/zh_cn
 function uws:libraries/internal/lang/initialize/ct_hk
+function uws:libraries/internal/lang/initialize/ja_jp
 function uws:libraries/internal/lang/score/get_default
 function uws:libraries/internal/loop/main
 
